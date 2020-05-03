@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22;
+  }
+  .html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  a {
+    text-decoration: none;
+  }
+
+    /*1 СПОСОБ*/
+    
+/*
+body {
+    
+}
+img.wen
+{
+    width:100px;
+    height:100px;
+}  
+*/
+
+    /*2 СПОСОБ*/
