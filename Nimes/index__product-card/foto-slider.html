@@ -9,12 +9,66 @@
 </head>
 <body>
     <div class="foto">
-            <img src="/index__product-card/product-card__img/vector-left.png" alt="vector" class="vector-left">
-            <img src="/index__product-card/product-card__img/vector-right.png" alt="vector" class="vector-right" onclick="imgsrc()">
-        <div class="foto__container_main">
-            <img src="/index__product-card/product-card__img/main_slider-img.png" alt="foto" class="foto_big">
+        <div class="arrows">
+            <img src="/index__product-card/product-card__img/vector-left.png" alt="vector" class="arrow prev">
+            <img src="/index__product-card/product-card__img/vector-right.png" alt="vector" class="arrow next">
         </div>
+            <ul class="slider">
+                <li class="slide active">
+                    <img src="/index__product-card/product-card__img/main_slider-img.png" alt="foto" class="foto_big">
+                </li>
+                <li class="slide">
+                    <img src="/index__product-card/product-card__img/1slider-img.png" alt="foto" class="foto_big">
+                </li>
+                <li class="slide">
+                    <img src="/index__product-card/product-card__img/2slider-img.png" alt="foto" class="foto_big">
+                </li>
+                <li class="slide">
+                    <img src="/index__product-card/product-card__img/3slider-img.png" alt="foto" class="foto_big">
+                </li>
+                <li class="slide">
+                    <img src="/index__product-card/product-card__img/4slider-img.png" alt="foto" class="foto_big">
+                </li>
+            </ul>
     </div>
 
+<script>
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+
+    let slides = document.querySelectorAll('.slider li');
+
+    for (let i=0; i<slides.length; i++) {
+        slides[i].style.zIndex = slides.length-i;
+    } 
+
+    next.onclick = function(){
+        let activeEl = document.querySelector('.active');
+        if(activeEl.nextElementSibling) {
+            activeEl.style.left = "-100%";
+            activeEl.classList.remove('active');
+            activeEl.nextElementSibling.classList.add('active');
+            this.classList.remove('no_active');
+            prev.classList.remove('no_active');
+            if(!activeEl.nextElementSibling.nextElementSibling) {
+                this.classList.add('no_active');
+            }
+        }
+    }
+
+    prev.onclick = function(){
+        let activeEl = document.querySelector('.active');
+        if(activeEl.previousElementSibling) {
+            activeEl.previousElementSibling.style.left = "0%";
+            activeEl.classList.remove('active');
+            activeEl.previousElementSibling.classList.add('active');
+            this.classList.remove('no_active');
+            next.classList.remove('no_active');
+            if(!activeEl.previousElementSibling.previousElementSibling) {
+                this.classList.add('no_active');
+            }
+        }
+    }
+</script>
 </body>
 </html>

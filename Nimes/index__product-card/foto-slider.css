@@ -19,11 +19,40 @@ a {
 .foto {
     max-width: 540px;
     width: 100%;
-    height: 656px;
-    background-color: aqua;
+    height: 523px;
+    position: relative;
 }
-.foto__container_main {
+.slider {
     margin-left: 70px;
-    margin-top: 0;
-    background-color: burlywood;
+    width: 400px;
+    height: 523px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in 0.1s;
+    left: 0;
+}
+.arrows {
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    top: 215px;
+    cursor: pointer;
+}
+.no_active {
+    opacity: 0.3;
+}
+.arrow.next {
+    right: 0;
+}
+
+.foto_big {
+    width: 400px;
+    height: 523px;
 }

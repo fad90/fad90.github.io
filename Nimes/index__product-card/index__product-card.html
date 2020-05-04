@@ -30,6 +30,40 @@
 
     <!--MAIN PRODUCT-->
     <div class="box">
+      <div class="all-foto">
+        <div class="foto">
+          <div class="arrows">
+              <img src="/index__product-card/product-card__img/vector-left.png" alt="vector" class="arrow prev">
+              <img src="/index__product-card/product-card__img/vector-right.png" alt="vector" class="arrow next">
+          </div>
+              <ul class="slider">
+                  <li class="slide active">
+                      <img src="/index__product-card/product-card__img/main_slider-img.png" alt="foto" class="foto_big">
+                  </li>
+                  <li class="slide">
+                      <img src="/index__product-card/product-card__img/1slider-img.png" alt="foto" class="foto_big">
+                  </li>
+                  <li class="slide">
+                      <img src="/index__product-card/product-card__img/2slider-img.png" alt="foto" class="foto_big">
+                  </li>
+                  <li class="slide">
+                      <img src="/index__product-card/product-card__img/3slider-img.png" alt="foto" class="foto_big">
+                  </li>
+                  <li class="slide">
+                      <img src="/index__product-card/product-card__img/4slider-img.png" alt="foto" class="foto_big">
+                  </li>
+              </ul>
+
+              <div class="foto__container_small">
+                <img src="/index__product-card/product-card__img/1slider-img.png" alt="foto" class="foto_small">
+                <img src="/index__product-card/product-card__img/2slider-img.png" alt="foto" class="foto_small">
+                <img src="/index__product-card/product-card__img/3slider-img.png" alt="foto" class="foto_small">
+                <img src="/index__product-card/product-card__img/4slider-img.png" alt="foto" class="foto_small">
+            </div>
+          </div>
+      </div>
+
+      <!---
         <div class="foto">
               <img src="/index__product-card/product-card__img/vector-left.png" alt="vector" class="vector-left">
               <img src="/index__product-card/product-card__img/vector-right.png" alt="vector" class="vector-right" onclick="imgsrc()">
@@ -41,7 +75,7 @@
                 <img src="/index__product-card/product-card__img/4slider-img.png" alt="foto" class="foto_small">
             </div>
         </div>
-
+      -->
         <div class="product__discribe">
             <p class="product__overalls">Overalls</p>
             <p class="product__text">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
@@ -149,50 +183,43 @@
         </div>
       </div>
       
-<script>
-  let mainFoto = document.querySelector('.foto_big')
-function imgsrc(){
-  
-}
-
-  /*
-const carouselSlide = document.querySelector('.foto__container_main');
-const carouselImages = document.querySelectorAll('foto__container_main img');
-
-//BUTTON
-const prevBtn = document.querySelector('.vector-left');
-const nextBtn = document.querySelector('vector-right');
-*/
-
-
-/*
-let i=0;
-let image=document.querySelectorAll('foto__container_main img');
-let imgs=new Array('main_slider-img.png', '1slider-img.png', '2slider-img.png', '3slider-img.png', '4slider-img.png'); //Добавте свои картинки через запятую
-let j=imgs.length;
-function imgsrc(){
-  if (i!=(j-1))
-  {i++;}
-
-image.src=imgs[i];
-}
-*/
-
-
-/*
-//COUNTER
-let counter = 1;
-const size = carouselImages[0].clientWidth;
-
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-//BUTTON LISTENERS
-nextBtn.addEventListener('click', () => {
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  counter++;
-  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-*/
-</script>
+      <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+    
+        let slides = document.querySelectorAll('.slider li');
+    
+        for (let i=0; i<slides.length; i++) {
+            slides[i].style.zIndex = slides.length-i;
+        } 
+    
+        next.onclick = function(){
+            let activeEl = document.querySelector('.active');
+            if(activeEl.nextElementSibling) {
+                activeEl.style.left = "-100%";
+                activeEl.classList.remove('active');
+                activeEl.nextElementSibling.classList.add('active');
+                this.classList.remove('no_active');
+                prev.classList.remove('no_active');
+                if(!activeEl.nextElementSibling.nextElementSibling) {
+                    this.classList.add('no_active');
+                }
+            }
+        }
+    
+        prev.onclick = function(){
+            let activeEl = document.querySelector('.active');
+            if(activeEl.previousElementSibling) {
+                activeEl.previousElementSibling.style.left = "0%";
+                activeEl.classList.remove('active');
+                activeEl.previousElementSibling.classList.add('active');
+                this.classList.remove('no_active');
+                next.classList.remove('no_active');
+                if(!activeEl.previousElementSibling.previousElementSibling) {
+                    this.classList.add('no_active');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
