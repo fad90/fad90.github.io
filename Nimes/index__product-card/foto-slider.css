@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151C22;
+}
+.html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+.foto {
+    max-width: 540px;
+    width: 100%;
+    height: 656px;
+    background-color: aqua;
+}
+.foto__container_main {
+    margin-left: 70px;
+    margin-top: 0;
+    background-color: burlywood;
+}
