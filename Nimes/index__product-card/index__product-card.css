@@ -44,6 +44,9 @@ a {
 .header__new {
     padding-right: 0;
 }
+.header__basket-loupe {
+    display: flex;
+}
 .header__loupe {
     padding-left: 35px;
 }
@@ -66,6 +69,7 @@ a {
     margin-left: 234px;
     margin-right: 60px;
 }
+
 .slider {
     margin-left: 70px;
     width: 400px;
@@ -111,35 +115,6 @@ a {
 .foto_small:last-child{
     margin-right: 0;
 }
-/*
-.foto {
-    max-width: 540px;
-    width: 100%;
-    height: 656px;
-    margin-left: 234px;
-    margin-right: 60px;
-}
-.foto__container_main {
-    margin-left: 70px;
-    width: 400px;
-}
-.foto_small {
-    margin-right: 16px;
-    margin-top: 20px;
-}
-.foto_small:last-child{
-    margin-right: 0;
-}
-.vector-left {
-    position: absolute;
-    margin-top: 215px;
-}
-.vector-right {
-    position: absolute;
-    margin-top: 215px;
-    margin-left: 527px; 
-}
-*/
 
 .product__discribe {
     width: 100%;

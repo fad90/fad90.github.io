@@ -220,9 +220,6 @@ h1 {
   justify-content: space-between;
   margin-top: 78px;
 }
-.clothes_main {
-  display: flex;
-}
 .clothes_name {
   font-family: Work Sans;
   font-style: normal;
@@ -232,22 +229,6 @@ h1 {
   color: #151c22;
   margin: 0;
   margin-top: 25px;
-}
-.jacket1 {
-  padding-right: 241px;
-}
-.overalls1 {
-  padding-right: 228px;
-}
-.jacket2 {
-  padding-right: 241px;
-}
-.overalls2 {
-  padding-right: 211px;
-}
-
-.price_main {
-  display: flex;
 }
 .clothes_price {
   font-family: Work Sans;
@@ -259,20 +240,6 @@ h1 {
   margin: 0;
   margin-top: 15px;
 }
-.jacket120 {
-  padding-right: 258px;
-}
-.overalls140 {
-  padding-right: 257px;
-}
-.jacket90 {
-  padding-right: 265px;
-}
-.overalls160 {
-  padding-right: 227px;
-}
-
-
 
 .fall_2019 {
   display: flex;
