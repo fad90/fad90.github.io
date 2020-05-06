@@ -51,7 +51,7 @@ a {
   padding-left: 35px;
 }
 .container {
-  background: url(/index__filter/filter__img/filter__header_backround.png);
+  background: url(/img/catalog/filter__header_backround.png);
   width: 100%;
   height: 260px;
 }
@@ -142,7 +142,7 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  background: url(/index__filter/filter__img/filter_vector.svg) 209px 21px
+  background: url(/img/catalog/filter_vector.svg) 209px 21px
     no-repeat;
 }
 .menu__filter {
@@ -154,11 +154,11 @@ a {
   padding: 18px 151px 19px 18px;
   width: 74px;
   height: 13px;
-  background: url(/index__filter/filter__img/filter_vector.svg) 209px 21px
+  background: url(/img/catalog/filter_vector.svg) 209px 21px
     no-repeat;
 }
 .menu__filter-vector {
-  background: url(/index__filter/filter__img/filter_vector-down.svg) 209px 21px
+  background: url(/img/catalog/filter_vector-down.svg) 209px 21px
     no-repeat;
 }
 .price__holder {
@@ -175,7 +175,7 @@ a {
   height: 11px;
 }
 .menu__price-vector {
-  background: url(/index__filter/filter__img/filter_vector-down.svg) 209px 21px
+  background: url(/img/catalog/filter_vector-down.svg) 209px 21px
     no-repeat;
 }
 
@@ -280,7 +280,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 11px;
 }
 .menu__color-vector {
-  background: url(/index__filter/filter__img/filter_vector-down.svg) 209px 21px
+  background: url(/img/catalog/filter_vector-down.svg) 209px 21px
     no-repeat;
 }
 .menu__color-all {
@@ -388,7 +388,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 11px;
 }
 .menu__collection-vector {
-  background: url(/index__filter/filter__img/filter_vector-down.svg) 209px 21px
+  background: url(/img/catalog/filter_vector-down.svg) 209px 21px
     no-repeat;
 }
 .menu__apply {
