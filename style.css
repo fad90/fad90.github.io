@@ -120,11 +120,14 @@ h1 {
   margin-left: 50px;
   opacity: 0.3;
   z-index: 1;
+  position: absolute;
 }
 .logo_face:before {
-  content: '';
-  background: url(/img/main_page/picture_up.svg);
+  content: url(/img/main_page/picture_up.svg);
   z-index: 5;
+  position: absolute;
+  margin-left: -66px;
+  margin-top: -49px;
 }
 /*
 .container_nav-img {
