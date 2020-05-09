@@ -34,9 +34,7 @@ h1 {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  height: 617px;
   position: relative;
-  background-color: greenyellow;
   display: flex;
   flex-direction: row;
 }
@@ -74,7 +72,6 @@ h1 {
   padding-left: 111px;
   display: flex;
   flex-direction: column;
-  background-color: lightseagreen;
 }
 .quality {
   width: 211px;
@@ -106,151 +103,65 @@ h1 {
   background: #151c22;
   border: 0;
   margin-left: 5px;
+  cursor: pointer;
+}
+.button_check:hover {
+  background: grey;
 }
 .three_image {
-  display: flex;
-  flex-direction: column;
-  width: 530px;
-  background-color: magenta;
+  height: 100%;
 }
 .logo_face {
   width: 430px;
   height: 517px;
-  margin-top: 50px;
-  margin-left: 50px;
-  opacity: 0.3;
-  position: absolute;
 }
-.logo_face:before {
+.main_img-center {
+  padding: 50px;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+
+.main_img-center:before {
   content: ' ';
   background-image: url(/img/main_page/picture_up.svg);
-  width: 50px;
-  height: 50px;
   position: absolute;
-  margin-left: -66px;
-  margin-top: -49px;
+  width: 232px;
+  height: 176px;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
 }
-/*
-.container_nav-img {
+.main_img-center:after {
+  content: ' ';
+  background-image: url(/img/main_page/picture_down.svg);
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 50px;
+  width: 232px;
+  height: 176px;
+  z-index: -1;
+  bottom: 0px;
+  right: 0px;
 }
-.nav {
+.container_icon-network {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
-.nav_link {
-  padding-bottom: 35px;
-  text-decoration: none;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #151c22;
-}
-.nav_link:last-child {
-  padding-bottom: 0;
-}
-
-.nav_link:hover {
-  color: grey;
-}
-
 .basket_loupe {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
-.logo_loupe {
-  padding-top: 35px;
-}
-
-.three_image {
-  width: 530px;
-  height: 617px;
-  position: relative;
-  margin-left: 520px;
-}
-
-.line_up {
-  width: 232px;
-  height: 176px;
-}
-
-.logo_face {
-  width: 430px;
-  height: 517px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
-
-.line_down {
-  width: 232px;
-  height: 176px;
-  margin-left: 298px;
-  margin-top: 261px;
-}
-
-.text_and_button {
-  width: 305px;
-  height: 256px;
-  position: absolute;
-  top: 192px;
-  left: 165px;
-}
-.quality {
-  position: absolute;
-  margin-top: 0;
-  margin-left: 4px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  color: #727a82;
-}
-.denim {
-  position: absolute;
-  margin-top: 0;
-  font-family: Anton;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 128px;
-  line-height: 188px;
-  color: #151c22;
-}
-.button_check {
-  position: absolute;
-  margin-top: 183px;
-  margin-left: 4px;
-  padding: 27px 24px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  background: #151c22;
-  border: 0;
-}
-.vector_network {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  bottom: 50px;
-  padding: 0;
-}
-.vector {
-  margin-top: 37px;
+.logo_basket {
+  padding-bottom: 35px;
 }
 .nav_network {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 .network_header {
   font-family: Work Sans;
@@ -258,16 +169,16 @@ h1 {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #151c22;
+  color: #151C22;
 }
-.facebook_header {
-  text-decoration: none;
-  padding-bottom: 35px;
+.network_header:hover {
+  color: grey;
 }
 .instagram_header {
-  text-decoration: none;
+  padding-top: 35px;
 }
-*/
+
+
 /* WORK AREA */
 
 .work_area {
