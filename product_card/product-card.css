@@ -167,12 +167,16 @@ a {
     border: 1px solid #F1F2F4;
     border-radius: 50%;
     margin-right: 27px;
+    cursor: pointer;
 }
 .product__color-different.color1 {
     margin: 2px;
     background-color: #b0c3c7;
 }
 .border1:hover {
+    border: 1px solid #b0c3c7;
+}
+.silver {
     border: 1px solid #b0c3c7;
 }
 .product__color-different.color2 {
@@ -182,11 +186,17 @@ a {
 .border2:hover {
     border: 1px solid #3b6392;
 }
+.blue {
+    border: 1px solid #3b6392;
+}
 .product__color-different.color3 {
     margin: 2px;
     background-color: #bfc3c8;
 }
 .border3:hover {
+    border: 1px solid #bfc3c8;
+}
+.grey {
     border: 1px solid #bfc3c8;
 }
 .size {
