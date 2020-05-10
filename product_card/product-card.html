@@ -81,11 +81,11 @@
             </div>
             <p class="size">Size</p>
             <div class="container-size">
-                <p class="container-size_all">XS</p>
-                <p class="container-size_all">S</p>
-                <p class="container-size_all">M</p>
-                <p class="container-size_all">L</p>
-                <p class="container-size_all">XL</p>
+                <p class="container-size_all size_xs">XS</p>
+                <p class="container-size_all size_s">S</p>
+                <p class="container-size_all size_m">M</p>
+                <p class="container-size_all size_l">L</p>
+                <p class="container-size_all size_xl">XL</p>
             </div>
             <p class="price">$ 160</p>
             <button class="button">Add to cart</button>
@@ -221,7 +221,37 @@
         grey.onclick = function(){
           grey.classList.toggle('grey');
         }
+        /*
+        let size_click = document.querySelector('.container-size_all');
+        size_click.onclick = function(){
+          size_click.classList.toggle('.size_colour');
+        }
+      */
+      let size_xs_click = document.querySelector('.size_xs');
+      let size_s_click = document.querySelector('.size_s');
+      let size_m_click = document.querySelector('.size_m');
+      let size_l_click = document.querySelector('.size_l');
+      let size_xl_click = document.querySelector('.size_xl');
+        
+        size_xs_click.onclick = function(){
+          size_xs_click.classList.toggle('size_colour');
+        }
 
+        size_s_click.onclick = function(){
+          size_s_click.classList.toggle('size_colour');
+        }
+
+        size_m_click.onclick = function(){
+          size_m_click.classList.toggle('size_colour');
+        }
+
+        size_l_click.onclick = function(){
+          size_l_click.classList.toggle('size_colour');
+        }
+
+        size_xl_click.onclick = function(){
+          size_xl_click.classList.toggle('size_colour');
+        }
     </script>
 </body>
 </html>

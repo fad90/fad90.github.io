@@ -223,8 +223,12 @@ a {
     font-size: 18px;
     line-height: 21px;
     color: #727A82;
+    cursor: pointer;
 }
 .container-size_all:hover {
+    color: #151C22;
+}
+.size_colour {
     color: #151C22;
 }
 .price {
