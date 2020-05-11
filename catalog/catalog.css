@@ -180,9 +180,11 @@ a {
 }
 
 /*ПОЛЗУНОК (PRICE)*/
+
 .middle {
   position: relative;
-  width: 100%;
+  width: 207px;
+  margin: 0 auto;
   background-color: #dcdcdc;
 }
 .price__box {
@@ -241,7 +243,7 @@ input[type="range"] {
   z-index: 2;
   height: 10px;
   width: 100%;
-  opacity: 0; /*если уберу появится thumb*/
+  opacity: 0;       /*если уберу появится thumb*/
   background-color: #4193da;
 }
 input[type="range"]::-webkit-slider-thumb {
@@ -273,6 +275,8 @@ input[type="range"]::-webkit-slider-thumb {
 .dol {
   margin-right: 3px;
 }
+
+
 
 /*FILTER COLOR*/
 .menu__color {
