@@ -1,364 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/catalog/catalog.css">
-    <link rel="stylesheet" href="/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/catalog/catalog.css" />
+    <link rel="stylesheet" href="/reset.css" />
     <title>Filter</title>
-</head>
-<body>
-
-    <!-- HEADER -->
-
+  </head>
+  <body>
+    <!--header-->
     <header class="header">
-        <div class="header__container">
-            <nav class="header__nav">
-                <a href="#" class="header__link">Woman</a>
-                <a href="#" class="header__link">Man</a>
-                <a href="#" class="header__link header__new">New</a>
-            </nav>
-            <img src="/img/catalog/logo.svg" alt="logo" class="header__logo">
-            <div class="header__basket-loupe">
-                <img src="/img/catalog/basket.svg" alt="basket" class="header__basket">
-                <img src="/img/catalog/loupe.svg" alt="loupe" class="header__loupe">
-            </div> 
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="container__center">
-            <div class="container__image">
-                <img src="/img/catalog/line__up.svg" alt="picture-up" class="container_picture-up">
-                <img src="/img/catalog/container__picture.png" alt="main-picture" class="container_main-picture">
-                <img src="/img/catalog/line__down.svg" alt="picture-down" class="container_picture-down">
-            </div>
-
-            <div class="container__text">
-                <nav class="container__nav">
-                    <a href="#" class="container__link">All categories</a>
-                    <p class="container__link">/</p>
-                    <a href="#" class="container__link">Woman</a>
-                    <p class="container__link">/</p>
-                    <a href="#" class="container__link container__jackets ">Jackets</a>
-                </nav>
-                <p class="container__text-main">Denim Collection Fall 2019</p>
-            </div>
-        </div>
-    </div>
-
-    <!--FALLEN MENU -->
-    <div class="menu">
-      <div class="menu__filter" onclick="menuFall()">Filter by</div>
-          <div class="menu__filter-block menu__filter-fall">
-              
-              <div class="price__holder">
-                  <div class="menu__price menu__all-filter" onclick="priceFall()">Price</div>
-                      
-                    <div class="price__box price__filter-fall">
-                          <div class="middle">
-                              <div class="multi-range-slider">
-                                  <input type="range" min="0" step="1" max="300" value="40" class="input-left input-range">
-                                  <input type="range" min="0" step="1" max="300" value="280" class="input-right input-range">
-                                  
-                                  <div class="slider"> 
-                                      <div class="track"></div>
-                                      <div class="range"></div>
-                                      <div class="thumb left"></div>
-                                      <div class="thumb right"></div>
-                                  </div> 
-                              </div>
-                          </div>
-                          <div class="price__block">
-                              <div class="input__price1">
-                                  <p class="dol">$</p> 
-                                  <p class="price1">40</p>
-                              </div>
-                              <div class="input__price2">
-                                  <p class="dol">$</p>
-                                  <p class="price2">240</p>
-                              </div>
-                          </div> 
-                    </div> 
-
-              </div>
-                  
-              <div class="color__holder">
-                  <div class="menu__color menu__all-filter" onclick="colorFall()">Color</div>
-                      <div class="menu__color-all menu__color-fall">
-                          <div class="border-color border1">
-                              <div class="menu__color-different color1"></div>
-                          </div>   
-                          <div class="border-color border2">
-                              <div class="menu__color-different color2"></div>
-                          </div>
-                          <div class="border-color border3">
-                              <div class="menu__color-different color3"></div>
-                          </div>
-                          <div class="border-color border4">
-                              <div class="menu__color-different color4"></div>
-                          </div>
-                          <div class="border-color border5">
-                              <div class="menu__color-different color5"></div>
-                          </div>
-                          <div class="border-color border6">
-                              <div class="menu__color-different color6"></div>
-                          </div>
-                      </div>
-              </div>
-
-              <div class="collection__holder">
-                 <div class="menu__collection menu__all-filter" onclick="collectionFall()">Collection</div>
-                      <div class="collection__box menu__collection-fall">
-                          <div class="menu__view menu__view-up">
-                              <p class="view__name casual">Casual</p>
-                              <p class="view__name petite">Petite</p>
-                          </div>
-                          <div class="menu__view menu__view-down">
-                              <p class="view__name classic">Classic</p>
-                              <p class="view__name soulluxe">Soulluxe</p>
-                          </div>
-                      </div>
-              </div>
-
-              <div class="menu__apply">Apply (9 products)</div>
-              <div class="menu__clear">Clear all</div>
-          </div>    
-  </div>
-
-
-    <!-- MAIN -->
-
-    <div class="main">
-        <div class="main__clothes-up">
-            <a class="main__jacket-up" href="#">
-              <img src="/img/catalog/picture_up1.png" alt="Jacket" />
-              <p class="main__text-up">Jacket</p>
-              <p class="main__price-up">$ 40</p>
-            </a>
-            <a class="main__jacket-up" href="#">
-              <img src="/img/catalog/picture_up2.png" alt="Jacket" />
-              <p class="main__text-up">Jacket</p>
-              <p class="main__price-up">$ 70</p>
-            </a>
-            <a class="main__jacket-up" href="#">
-              <img src="/img/catalog/picture_up3.png" alt="Jacket" />
-              <p class="main__text-up">Jacket</p>
-              <p class="main__price-up">$ 60</p>
-            </a>
-            <a class="main__jacket-up" href="#">
-              <img src="/img/catalog/picture_up4.png" alt="Jacket" />
-              <p class="main__text-up">Jacket</p>
-              <p class="main__price-up">$ 50</p>
-            </a>
-        </div>
-
-        <div class="main__clothes-middle">
-            <a class="main__jacket-middle" href="#">
-              <img src="/img/catalog/picture_middle1.png" alt="Jacket" />
-              <p class="main__text-middle">Jacket</p>
-              <p class="main__price-middle">$ 40</p>
-            </a>
-            <a class="main__jacket-middle" href="#">
-              <img src="/img/catalog/picture_middle2.png" alt="Jacket" />
-              <p class="main__text-middle">Jacket</p>
-              <p class="main__price-middle">$ 110</p>
-            </a>
-            <a class="main__jacket-middle" href="#" >
-              <img src="/img/catalog/picture_big.png" alt="Jacket">
-              <p class="main__text-middle">Jacket</p>
-              <p class="main__price-middle">$ 160</p>
-            </a>  
-        </div>
-
-        <div class="main__clothes-down">
-            <a class="main__jacket-down" href="#">
-              <img src="/img/catalog/picture_down1.png" alt="Jacket" />
-              <p class="main__text-down">Jacket</p>
-              <p class="main__price-down">$ 35</p>
-            </a>
-            <a class="main__jacket-down" href="#">
-              <img src="/img/catalog/picture_down2.png" alt="Jacket" />
-              <p class="main__text-down">Jacket</p>
-              <p class="main__price-down">$ 85</p>
-            </a> 
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-
-    <div class="footer">
-        <div class="footer__section__logo">
-          <div class="footer__logo">
-            <img
-              src="/img/catalog/logo_footer.svg"
-              alt="logo-footer"
-            />
-          </div>
-  
-          <div class="footer__section__link">
-            <nav class="footer__nav">
-              <a class="footer__link footer__link_shop" href="#">Shop</a>
-              <a class="footer__link footer___link_delivery" href="#">Delivery</a>
-              <a class="footer__link footer__link_service" href="#">Service</a>
-              <a class="footer__link footer__link_sitemap" href="#">Sitemap</a>
-              <a class="footer__link footer__link_contacts" href="#">Contacts</a>
-            </nav>
-          </div>
-  
-          <div class="footer__media">
-            <a class="footer__media__logo" href="#">
-              <img src="/img/catalog/facebook_footer.svg" alt="facebook" />
-            </a>
-            <a class="footer__media__logo" href="#">
-              <img src="/img/catalog/instagram_footer.svg" alt="instagram" />
-            </a>
-            <a class="footer__media__logo" href="#">
-              <img src="/img/catalog/pinterest_footer.svg" alt="pinterest" />
-            </a>
-            <a class="footer__media__logo" href="#">
-              <img src="/img/catalog/twitter_footer.svg" alt="twitter" />
-            </a>
-          </div>
+      <div class="header__container">
+        <nav class="header__nav">
+          <a href="#" class="header__link">Woman</a>
+          <a href="#" class="header__link">Man</a>
+          <a href="#" class="header__link header__new">New</a>
+        </nav>
+        <img src="/img/catalog/logo.svg" alt="logo" class="header__logo" />
+        <div class="header__basket-loupe">
+          <img
+            src="/img/catalog/basket.svg"
+            alt="basket"
+            class="header__basket"
+          />
+          <img src="/img/catalog/loupe.svg" alt="loupe" class="header__loupe" />
         </div>
       </div>
+    </header>
 
-      <script>
+    <div class="container">
+      <div class="container__center">
+        <div class="container__image">
+          <img
+            src="/img/catalog/line__up.svg"
+            alt="picture-up"
+            class="container_picture-up"
+          />
+          <img
+            src="/img/catalog/container__picture.png"
+            alt="main-picture"
+            class="container_main-picture"
+          />
+          <img
+            src="/img/catalog/line__down.svg"
+            alt="picture-down"
+            class="container_picture-down"
+          />
+        </div>
 
-          /*RANGE SLIDER*/
-          
-        let slider1=document.querySelector('.input-left');
-        let val1=document.querySelector('p.price1');
-        let slider2=document.querySelector('.input-right');
-        let val2=document.querySelector('p.price2');
-        val1.innerHTML=slider1.value;
-        slider1.oninput=function(){
-            val1.innerHTML=this.value;
-        }
-        val2.innerHTML=slider2.value;
-        slider2.oninput=function(){
-            val2.innerHTML=this.value;
-        }
-    
-    
-        let inputLeft = document.querySelector(".input-left");
-        let inputRight = document.querySelector(".input-right");
-    
-        let thumbLeft = document.querySelector(".slider > .thumb.left");
-        let thumbRight = document.querySelector(".slider > .thumb.right");
-        let range = document.querySelector(".slider > .range");
-    
-        function setLeftValue() {
-            let _this = inputLeft,
-                min = parseInt(_this.min),
-                max = parseInt(_this.max);
-    
-            _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
-            
-            let percent = ((_this.value - min) / (max - min)) * 100;
-    
-            thumbLeft.style.left = percent + "%";
-            range.style.left = percent + "%";
-        }
-        setLeftValue();
-    
-        function setRightValue() {
-            let _this = inputRight,
-                min = parseInt(_this.min),
-                max = parseInt(_this.max);
-    
-            _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
-            
-            let percent = ((_this.value - min) / (max - min)) * 100;
-    
-            thumbRight.style.right = (100 - percent) + "%";
-            range.style.right = (100 - percent) + "%";
-        }
-        setRightValue();
-    
-        inputLeft.addEventListener("input", setLeftValue);
-        inputRight.addEventListener("input", setRightValue);
-    
-    /*FALLEN MENU*/
-    
-    /*Filter Fall*/
-    let filterElem = document.querySelector(".menu__filter-block");
-    let filterVector = document.querySelector(".menu__filter");
-    
-    function menuFall() {
+        <div class="container__text">
+          <nav class="container__nav">
+            <a href="#" class="container__link">All categories</a>
+            <p class="container__link">/</p>
+            <a href="#" class="container__link">Woman</a>
+            <p class="container__link">/</p>
+            <a href="#" class="container__link container__jackets">Jackets</a>
+          </nav>
+          <p class="container__text-main">Denim Collection Fall 2019</p>
+        </div>
+      </div>
+    </div>
+
+    <!--fallen menu -->
+    <div class="menu">
+      <div class="menu__filter" onclick="menuFall()">Filter by</div>
+      <div class="menu__filter-block menu__filter-fall">
+        <div class="price__holder">
+          <div class="menu__price menu__all-filter" onclick="priceFall()">
+            Price
+          </div>
+
+          <div class="price__box price__filter-fall">
+            <div class="middle">
+              <div class="multi-range-slider">
+                <input
+                  type="range"
+                  min="0"
+                  step="1"
+                  max="300"
+                  value="40"
+                  class="input-left input-range"
+                />
+                <input
+                  type="range"
+                  min="0"
+                  step="1"
+                  max="300"
+                  value="280"
+                  class="input-right input-range"
+                />
+
+                <div class="slider">
+                  <div class="track"></div>
+                  <div class="range"></div>
+                  <div class="thumb left"></div>
+                  <div class="thumb right"></div>
+                </div>
+              </div>
+            </div>
+            <div class="price__block">
+              <div class="input__price1">
+                <p class="dol">$</p>
+                <p class="price1">40</p>
+              </div>
+              <div class="input__price2">
+                <p class="dol">$</p>
+                <p class="price2">240</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="color__holder">
+          <div class="menu__color menu__all-filter" onclick="colorFall()">
+            Color
+          </div>
+          <div class="menu__color-all menu__color-fall">
+            <div class="border-color border1">
+              <div class="menu__color-different color1"></div>
+            </div>
+            <div class="border-color border2">
+              <div class="menu__color-different color2"></div>
+            </div>
+            <div class="border-color border3">
+              <div class="menu__color-different color3"></div>
+            </div>
+            <div class="border-color border4">
+              <div class="menu__color-different color4"></div>
+            </div>
+            <div class="border-color border5">
+              <div class="menu__color-different color5"></div>
+            </div>
+            <div class="border-color border6">
+              <div class="menu__color-different color6"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collection__holder">
+          <div
+            class="menu__collection menu__all-filter"
+            onclick="collectionFall()"
+          >
+            Collection
+          </div>
+          <div class="collection__box menu__collection-fall">
+            <div class="menu__view menu__view-up">
+              <p class="view__name casual">Casual</p>
+              <p class="view__name petite">Petite</p>
+            </div>
+            <div class="menu__view menu__view-down">
+              <p class="view__name classic">Classic</p>
+              <p class="view__name soulluxe">Soulluxe</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__apply">Apply (9 products)</div>
+        <div class="menu__clear">Clear all</div>
+      </div>
+    </div>
+
+    <!--main-->
+
+    <div class="main">
+      <div class="main__clothes-up">
+        <a class="main__jacket-up" href="#">
+          <img src="/img/catalog/picture_up1.png" alt="Jacket" />
+          <p class="main__text-up">Jacket</p>
+          <p class="main__price-up">$ 40</p>
+        </a>
+        <a class="main__jacket-up" href="#">
+          <img src="/img/catalog/picture_up2.png" alt="Jacket" />
+          <p class="main__text-up">Jacket</p>
+          <p class="main__price-up">$ 70</p>
+        </a>
+        <a class="main__jacket-up" href="#">
+          <img src="/img/catalog/picture_up3.png" alt="Jacket" />
+          <p class="main__text-up">Jacket</p>
+          <p class="main__price-up">$ 60</p>
+        </a>
+        <a class="main__jacket-up" href="#">
+          <img src="/img/catalog/picture_up4.png" alt="Jacket" />
+          <p class="main__text-up">Jacket</p>
+          <p class="main__price-up">$ 50</p>
+        </a>
+      </div>
+
+      <div class="main__clothes-middle">
+        <a class="main__jacket-middle" href="#">
+          <img src="/img/catalog/picture_middle1.png" alt="Jacket" />
+          <p class="main__text-middle">Jacket</p>
+          <p class="main__price-middle">$ 40</p>
+        </a>
+        <a class="main__jacket-middle" href="#">
+          <img src="/img/catalog/picture_middle2.png" alt="Jacket" />
+          <p class="main__text-middle">Jacket</p>
+          <p class="main__price-middle">$ 110</p>
+        </a>
+        <a class="main__jacket-middle" href="#">
+          <img src="/img/catalog/picture_big.png" alt="Jacket" />
+          <p class="main__text-middle">Jacket</p>
+          <p class="main__price-middle">$ 160</p>
+        </a>
+      </div>
+
+      <div class="main__clothes-down">
+        <a class="main__jacket-down" href="#">
+          <img src="/img/catalog/picture_down1.png" alt="Jacket" />
+          <p class="main__text-down">Jacket</p>
+          <p class="main__price-down">$ 35</p>
+        </a>
+        <a class="main__jacket-down" href="#">
+          <img src="/img/catalog/picture_down2.png" alt="Jacket" />
+          <p class="main__text-down">Jacket</p>
+          <p class="main__price-down">$ 85</p>
+        </a>
+      </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="footer">
+      <div class="footer__section__logo">
+        <div class="footer__logo">
+          <img src="/img/catalog/logo_footer.svg" alt="logo-footer" />
+        </div>
+
+        <div class="footer__section__link">
+          <nav class="footer__nav">
+            <a class="footer__link footer__link_shop" href="#">Shop</a>
+            <a class="footer__link footer___link_delivery" href="#">Delivery</a>
+            <a class="footer__link footer__link_service" href="#">Service</a>
+            <a class="footer__link footer__link_sitemap" href="#">Sitemap</a>
+            <a class="footer__link footer__link_contacts" href="#">Contacts</a>
+          </nav>
+        </div>
+
+        <div class="footer__media">
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/facebook_footer.svg" alt="facebook" />
+          </a>
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/instagram_footer.svg" alt="instagram" />
+          </a>
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/pinterest_footer.svg" alt="pinterest" />
+          </a>
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/twitter_footer.svg" alt="twitter" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /*range slider*/
+      let slider1 = document.querySelector(".input-left");
+      let val1 = document.querySelector("p.price1");
+      let slider2 = document.querySelector(".input-right");
+      let val2 = document.querySelector("p.price2");
+      val1.innerHTML = slider1.value;
+      slider1.oninput = function () {
+        val1.innerHTML = this.value;
+      };
+      val2.innerHTML = slider2.value;
+      slider2.oninput = function () {
+        val2.innerHTML = this.value;
+      };
+
+      let inputLeft = document.querySelector(".input-left");
+      let inputRight = document.querySelector(".input-right");
+
+      let thumbLeft = document.querySelector(".slider > .thumb.left");
+      let thumbRight = document.querySelector(".slider > .thumb.right");
+      let range = document.querySelector(".slider > .range");
+
+      function setLeftValue() {
+        let _this = inputLeft,
+          min = parseInt(_this.min),
+          max = parseInt(_this.max);
+
+        _this.value = Math.min(
+          parseInt(_this.value),
+          parseInt(inputRight.value) - 1
+        );
+
+        let percent = ((_this.value - min) / (max - min)) * 100;
+
+        thumbLeft.style.left = percent + "%";
+        range.style.left = percent + "%";
+      }
+      setLeftValue();
+
+      function setRightValue() {
+        let _this = inputRight,
+          min = parseInt(_this.min),
+          max = parseInt(_this.max);
+
+        _this.value = Math.max(
+          parseInt(_this.value),
+          parseInt(inputLeft.value) + 1
+        );
+
+        let percent = ((_this.value - min) / (max - min)) * 100;
+
+        thumbRight.style.right = 100 - percent + "%";
+        range.style.right = 100 - percent + "%";
+      }
+      setRightValue();
+
+      inputLeft.addEventListener("input", setLeftValue);
+      inputRight.addEventListener("input", setRightValue);
+
+      /*fallen menu*/
+
+      /*Filter Fall*/
+      let filterElem = document.querySelector(".menu__filter-block");
+      let filterVector = document.querySelector(".menu__filter");
+
+      function menuFall() {
         filterElem.classList.toggle("menu__filter-fall");
         filterVector.classList.toggle("menu__filter-vector");
-    }
-    /*Price Fall*/
-    let priceElem = document.querySelector(".price__box");
-    let priceVector = document.querySelector(".menu__price");
-    
-    function priceFall() {
+      }
+      /*Price Fall*/
+      let priceElem = document.querySelector(".price__box");
+      let priceVector = document.querySelector(".menu__price");
+
+      function priceFall() {
         priceElem.classList.toggle("price__filter-fall");
         priceVector.classList.toggle("menu__price-vector");
-    }
-    /*Color Fall*/
-    let colorElem = document.querySelector(".menu__color-all");
-    let colorVector = document.querySelector(".menu__color");
-    
-    function colorFall() {
+      }
+      /*Color Fall*/
+      let colorElem = document.querySelector(".menu__color-all");
+      let colorVector = document.querySelector(".menu__color");
+
+      function colorFall() {
         colorElem.classList.toggle("menu__color-fall");
         colorVector.classList.toggle("menu__color-vector");
-    }
-    /*Collection Fall*/
-    let collectionElem = document.querySelector(".collection__box");
-    let collectionVector = document.querySelector(".menu__collection");
-    function collectionFall() {
+      }
+      /*Collection Fall*/
+      let collectionElem = document.querySelector(".collection__box");
+      let collectionVector = document.querySelector(".menu__collection");
+      function collectionFall() {
         collectionElem.classList.toggle("menu__collection-fall");
         collectionVector.classList.toggle("menu__collection-vector");
-    }
-    
-    /*Border color*/
-    let color1 = document.querySelector(".border1");
-    let color2 = document.querySelector(".border2");
-    let color3 = document.querySelector(".border3");
-    let color4 = document.querySelector(".border4");
-    let color5 = document.querySelector(".border5");
-    let color6 = document.querySelector(".border6");
+      }
 
-    color1.onclick = function(){
+      /*Border color*/
+      let color1 = document.querySelector(".border1");
+      let color2 = document.querySelector(".border2");
+      let color3 = document.querySelector(".border3");
+      let color4 = document.querySelector(".border4");
+      let color5 = document.querySelector(".border5");
+      let color6 = document.querySelector(".border6");
+
+      color1.onclick = function () {
         color1.classList.toggle("click_border1");
-    }
-    color2.onclick = function(){
+      };
+      color2.onclick = function () {
         color2.classList.toggle("click_border2");
-    }
-    color3.onclick = function(){
+      };
+      color3.onclick = function () {
         color3.classList.toggle("click_border3");
-    }
-    color4.onclick = function(){
+      };
+      color4.onclick = function () {
         color4.classList.toggle("click_border4");
-    }
-    color5.onclick = function(){
+      };
+      color5.onclick = function () {
         color5.classList.toggle("click_border5");
-    }
-    color6.onclick = function(){
+      };
+      color6.onclick = function () {
         color6.classList.toggle("click_border6");
-    }
+      };
 
-    let casual = document.querySelector(".casual");
-    let petite = document.querySelector(".petite");
-    let classic = document.querySelector(".classic");
-    let soulluxe = document.querySelector(".soulluxe");
+      let casual = document.querySelector(".casual");
+      let petite = document.querySelector(".petite");
+      let classic = document.querySelector(".classic");
+      let soulluxe = document.querySelector(".soulluxe");
 
-    casual.onclick = function(){
+      casual.onclick = function () {
         casual.classList.toggle("collection_click");
-    }
-    petite.onclick = function(){
+      };
+      petite.onclick = function () {
         petite.classList.toggle("collection_click");
-    }
-    classic.onclick = function(){
+      };
+      classic.onclick = function () {
         classic.classList.toggle("collection_click");
-    }
-    soulluxe.onclick = function(){
+      };
+      soulluxe.onclick = function () {
         soulluxe.classList.toggle("collection_click");
-    }
-
-     </script>
-</body>
+      };
+    </script>
+  </body>
 </html>
