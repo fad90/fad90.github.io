@@ -115,7 +115,8 @@ a {
     cursor: pointer;
 }
 .foto_dot.active {
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0 0 4px 3px rgb(18, 128, 136);
+    border
 }
 
 .product__discribe {
