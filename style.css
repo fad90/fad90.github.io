@@ -394,7 +394,6 @@ a {
 }
 .media {
   padding-right: 30px;
-  background-color: darkcyan;
 }
 .media:last-child {
   padding-right: 0px;

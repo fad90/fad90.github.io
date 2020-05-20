@@ -54,126 +54,110 @@
             />
          </div>
         </div>
-
-        <!-- <div class="container__image">
-          <img
-            src="/img/catalog/line__up.svg"
-            alt="picture-up"
-            class="container_picture-up"
-          />
-          <img
-            src="/img/catalog/container__picture.png"
-            alt="main-picture"
-            class="container_main-picture"
-          />
-          <img
-            src="/img/catalog/line__down.svg"
-            alt="picture-down"
-            class="container_picture-down"
-          />
-        </div> -->
       </div>
     </div>
 
     <!--fallen menu -->
-    <div class="menu">
-      <div class="menu__filter" onclick="menuFall()">Filter by</div>
-      <div class="menu__filter-block menu__filter-fall">
-        <div class="price__holder">
-          <div class="menu__price menu__all-filter" onclick="priceFall()">
-            Price
-          </div>
-
-          <div class="price__box price__filter-fall">
-            <div class="middle">
-              <div class="multi-range-slider">
-                <input
-                  type="range"
-                  min="0"
-                  step="1"
-                  max="300"
-                  value="40"
-                  class="input-left input-range"
-                />
-                <input
-                  type="range"
-                  min="0"
-                  step="1"
-                  max="300"
-                  value="280"
-                  class="input-right input-range"
-                />
-
-                <div class="slider">
-                  <div class="track"></div>
-                  <div class="range"></div>
-                  <div class="thumb left"></div>
-                  <div class="thumb right"></div>
+<div class="container__menu">
+      <div class="menu">
+        <div class="menu__filter" onclick="menuFall()">Filter by</div>
+        <div class="menu__filter-block menu__filter-fall">
+          <div class="price__holder">
+            <div class="menu__price menu__all-filter" onclick="priceFall()">
+              Price
+            </div>
+  
+            <div class="price__box price__filter-fall">
+              <div class="middle">
+                <div class="multi-range-slider">
+                  <input
+                    type="range"
+                    min="0"
+                    step="1"
+                    max="300"
+                    value="40"
+                    class="input-left input-range"
+                  />
+                  <input
+                    type="range"
+                    min="0"
+                    step="1"
+                    max="300"
+                    value="280"
+                    class="input-right input-range"
+                  />
+  
+                  <div class="slider">
+                    <div class="track"></div>
+                    <div class="range"></div>
+                    <div class="thumb left"></div>
+                    <div class="thumb right"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="price__block">
+                <div class="input__price1">
+                  <p class="dol">$</p>
+                  <p class="price1">40</p>
+                </div>
+                <div class="input__price2">
+                  <p class="dol">$</p>
+                  <p class="price2">240</p>
                 </div>
               </div>
             </div>
-            <div class="price__block">
-              <div class="input__price1">
-                <p class="dol">$</p>
-                <p class="price1">40</p>
+          </div>
+  
+          <div class="color__holder">
+            <div class="menu__color menu__all-filter" onclick="colorFall()">
+              Color
+            </div>
+            <div class="menu__color-all menu__color-fall">
+              <div class="border-color border1">
+                <div class="menu__color-different color1"></div>
               </div>
-              <div class="input__price2">
-                <p class="dol">$</p>
-                <p class="price2">240</p>
+              <div class="border-color border2">
+                <div class="menu__color-different color2"></div>
+              </div>
+              <div class="border-color border3">
+                <div class="menu__color-different color3"></div>
+              </div>
+              <div class="border-color border4">
+                <div class="menu__color-different color4"></div>
+              </div>
+              <div class="border-color border5">
+                <div class="menu__color-different color5"></div>
+              </div>
+              <div class="border-color border6">
+                <div class="menu__color-different color6"></div>
               </div>
             </div>
           </div>
+  
+          <div class="collection__holder">
+            <div
+              class="menu__collection menu__all-filter"
+              onclick="collectionFall()"
+            >
+              Collection
+            </div>
+            <div class="collection__box menu__collection-fall">
+              <div class="menu__view menu__view-up">
+                <p class="view__name casual">Casual</p>
+                <p class="view__name petite">Petite</p>
+              </div>
+              <div class="menu__view menu__view-down">
+                <p class="view__name classic">Classic</p>
+                <p class="view__name soulluxe">Soulluxe</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="menu__apply">Apply (9 products)</div>
+          <div class="menu__clear">Clear all</div>
         </div>
-
-        <div class="color__holder">
-          <div class="menu__color menu__all-filter" onclick="colorFall()">
-            Color
-          </div>
-          <div class="menu__color-all menu__color-fall">
-            <div class="border-color border1">
-              <div class="menu__color-different color1"></div>
-            </div>
-            <div class="border-color border2">
-              <div class="menu__color-different color2"></div>
-            </div>
-            <div class="border-color border3">
-              <div class="menu__color-different color3"></div>
-            </div>
-            <div class="border-color border4">
-              <div class="menu__color-different color4"></div>
-            </div>
-            <div class="border-color border5">
-              <div class="menu__color-different color5"></div>
-            </div>
-            <div class="border-color border6">
-              <div class="menu__color-different color6"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="collection__holder">
-          <div
-            class="menu__collection menu__all-filter"
-            onclick="collectionFall()"
-          >
-            Collection
-          </div>
-          <div class="collection__box menu__collection-fall">
-            <div class="menu__view menu__view-up">
-              <p class="view__name casual">Casual</p>
-              <p class="view__name petite">Petite</p>
-            </div>
-            <div class="menu__view menu__view-down">
-              <p class="view__name classic">Classic</p>
-              <p class="view__name soulluxe">Soulluxe</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="menu__apply">Apply (9 products)</div>
-        <div class="menu__clear">Clear all</div>
       </div>
-    </div>
+</div>
 
     <!--main-->
 
