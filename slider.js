@@ -2,7 +2,7 @@ let next = document.querySelector(".next");
 let prev = document.querySelector(".prev");
 
 let slides = document.querySelectorAll(".slider li");
-let dots = document.querySelectorAll(".foto_dot");
+let dots = document.querySelectorAll(".photo_dot");
 
 let index = 0;
 

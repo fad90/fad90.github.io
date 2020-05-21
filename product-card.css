@@ -105,10 +105,10 @@ a {
   margin: 0 auto;
   margin-top: 20px;
 }
-.foto_dot {
+.photo_dot {
   cursor: pointer;
 }
-.foto_dot.active {
+.photo_dot.active {
   box-shadow: 0 0 4px 3px rgb(18, 128, 136);
 }
 .product__discribe {
