@@ -16,9 +16,6 @@ body {
 a {
   text-decoration: none;
 }
-
-/*header*/
-
 .header {
   width: 100%;
   height: 68px;
@@ -51,7 +48,6 @@ a {
   padding-left: 35px;
 }
 
-/*main product*/
 .box {
   width: 100%;
   height: 656px;
@@ -69,7 +65,6 @@ a {
   margin-left: 234px;
   margin-right: 60px;
 }
-
 .slider {
   margin-left: 70px;
   width: 400px;
@@ -99,7 +94,6 @@ a {
 .arrow.next {
   right: 0;
 }
-
 .foto_big {
   width: 400px;
   height: 523px;
@@ -117,7 +111,6 @@ a {
 .foto_dot.active {
   box-shadow: 0 0 4px 3px rgb(18, 128, 136);
 }
-
 .product__discribe {
   width: 100%;
   height: 656px;
@@ -258,7 +251,6 @@ a {
   background-color: #151c22;
 }
 
-/*other product*/
 .work_area {
   width: 100%;
   max-width: 1170px;
@@ -291,7 +283,6 @@ a {
   margin: 0;
   padding-right: 5px;
 }
-
 .line_view {
   display: flex;
   justify-content: flex-end;
@@ -325,7 +316,6 @@ a {
   color: #151c22;
 }
 
-/*footer*/
 .footer {
   background: #151c22;
   height: 222px;

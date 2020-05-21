@@ -16,8 +16,6 @@ body {
 h1 {
   margin: 0;
 }
-
-/* HEADER */
 .header_logo {
   height: 17px;
   display: flex;
@@ -55,8 +53,7 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #151C22;
-
+  color: #151c22;
 }
 .nav_link:last-child {
   padding-bottom: 0;
@@ -123,7 +120,7 @@ h1 {
 }
 
 .main_img-center:before {
-  content: ' ';
+  content: " ";
   background-image: url(/img/main_page/picture_up.svg);
   position: absolute;
   width: 232px;
@@ -133,7 +130,7 @@ h1 {
   left: 0px;
 }
 .main_img-center:after {
-  content: ' ';
+  content: " ";
   background-image: url(/img/main_page/picture_down.svg);
   position: absolute;
   width: 232px;
@@ -169,7 +166,7 @@ h1 {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #151C22;
+  color: #151c22;
 }
 .network_header:hover {
   color: grey;
@@ -177,9 +174,6 @@ h1 {
 .instagram_header {
   padding-top: 35px;
 }
-
-
-/* WORK AREA */
 
 .work_area {
   width: 100%;
@@ -214,7 +208,6 @@ h1 {
   margin: 0;
   padding-right: 5px;
 }
-
 .line_view {
   display: flex;
   justify-content: flex-end;
@@ -244,7 +237,6 @@ h1 {
   margin: 0;
   margin-top: 15px;
 }
-
 .fall_2019 {
   display: flex;
   margin-top: 130px;
@@ -259,7 +251,7 @@ h1 {
   right: 71px;
 }
 .street_fashion {
-  position:absolute;
+  position: absolute;
   bottom: 256px;
   left: 70px;
   font-family: Work Sans;
@@ -299,7 +291,6 @@ h1 {
   width: 200px;
   height: 64px;
 }
-
 .category {
   display: flex;
   justify-content: space-between;
@@ -364,8 +355,6 @@ h1 {
 a {
   text-decoration: none;
 }
-
-/* FOOTER */
 
 .footer {
   background: #151c22;
