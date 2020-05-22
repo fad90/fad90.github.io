@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/catalog.css" />
     <link rel="stylesheet" href="/reset.css" />
     <title>Filter</title>
-    <script defer src="/fallen_menu.js"></script>
   </head>
   <body>
     <header class="header">
@@ -66,10 +65,10 @@
     </div>
 
     <div class="menu">
-      <div class="menu__filter" onclick="menuFall()">Filter by</div>
+      <div class="menu__filter">Filter by</div>
       <div class="menu__filter-block menu__filter-fall">
         <div class="price__holder">
-          <div class="menu__price menu__all-filter" onclick="priceFall()">
+          <div class="menu__price menu__all-filter">
             Price
           </div>
 
@@ -115,7 +114,7 @@
         </div>
 
         <div class="color__holder">
-          <div class="menu__color menu__all-filter" onclick="colorFall()">
+          <div class="menu__color menu__all-filter">
             Color
           </div>
           <div class="menu__color-all menu__color-fall">
@@ -143,7 +142,6 @@
         <div class="collection__holder">
           <div
             class="menu__collection menu__all-filter"
-            onclick="collectionFall()"
           >
             Collection
           </div>
@@ -252,5 +250,6 @@
         </div>
       </div>
     </div>
+  <script src="/fallen_menu.js"></script>
   </body>
 </html>

@@ -1,14 +1,14 @@
- let slider1 = document.querySelector(".input-left");
- let val1 = document.querySelector("p.price1");
- let slider2 = document.querySelector(".input-right");
- let val2 = document.querySelector("p.price2");
- val1.innerHTML = slider1.value;
- slider1.oninput = function () {
-   val1.innerHTML = this.value;
+ let sliderOne = document.querySelector(".input-left");
+ let valueOne = document.querySelector("p.price1");
+ let sliderTwo = document.querySelector(".input-right");
+ let valueTwo = document.querySelector("p.price2");
+ valueOne.innerHTML = sliderOne.value;
+ sliderOne.oninput = function () {
+   valueOne.innerHTML = this.value;
  };
- val2.innerHTML = slider2.value;
- slider2.oninput = function () {
-   val2.innerHTML = this.value;
+ valueTwo.innerHTML = sliderTwo.value;
+ sliderTwo.oninput = function () {
+   valueTwo.innerHTML = this.value;
  };
 
  let inputLeft = document.querySelector(".input-left");
@@ -59,7 +59,7 @@
  let filterElem = document.querySelector(".menu__filter-block");
  let filterVector = document.querySelector(".menu__filter");
 
- function menuFall() {
+filterVector.onclick = function() {
    filterElem.classList.toggle("menu__filter-fall");
    filterVector.classList.toggle("menu__filter-vector");
  }
@@ -67,7 +67,7 @@
  let priceElem = document.querySelector(".price__box");
  let priceVector = document.querySelector(".menu__price");
 
- function priceFall() {
+ priceVector.onclick = function() {
    priceElem.classList.toggle("price__filter-fall");
    priceVector.classList.toggle("menu__price-vector");
  }
@@ -75,43 +75,44 @@
  let colorElem = document.querySelector(".menu__color-all");
  let colorVector = document.querySelector(".menu__color");
 
- function colorFall() {
+ colorVector.onclick = function() {
    colorElem.classList.toggle("menu__color-fall");
    colorVector.classList.toggle("menu__color-vector");
  }
  
  let collectionElem = document.querySelector(".collection__box");
  let collectionVector = document.querySelector(".menu__collection");
- function collectionFall() {
+
+ collectionVector.onclick = function() {
    collectionElem.classList.toggle("menu__collection-fall");
    collectionVector.classList.toggle("menu__collection-vector");
  }
 
  
- let color1 = document.querySelector(".border1");
- let color2 = document.querySelector(".border2");
- let color3 = document.querySelector(".border3");
- let color4 = document.querySelector(".border4");
- let color5 = document.querySelector(".border5");
- let color6 = document.querySelector(".border6");
+ let colorOne = document.querySelector(".border1");
+ let colorTwo = document.querySelector(".border2");
+ let colorThree = document.querySelector(".border3");
+ let colorFour = document.querySelector(".border4");
+ let colorFive = document.querySelector(".border5");
+ let colorSix = document.querySelector(".border6");
 
- color1.onclick = function () {
-   color1.classList.toggle("click_border1");
+ colorOne.onclick = function () {
+   colorOne.classList.toggle("click_border1");
  };
- color2.onclick = function () {
-   color2.classList.toggle("click_border2");
+ colorTwo.onclick = function () {
+   colorTwo.classList.toggle("click_border2");
  };
- color3.onclick = function () {
-   color3.classList.toggle("click_border3");
+ colorThree.onclick = function () {
+   colorThree.classList.toggle("click_border3");
  };
- color4.onclick = function () {
-   color4.classList.toggle("click_border4");
+ colorFour.onclick = function () {
+   colorFour.classList.toggle("click_border4");
  };
- color5.onclick = function () {
-   color5.classList.toggle("click_border5");
+ colorFive.onclick = function () {
+   colorFive.classList.toggle("click_border5");
  };
- color6.onclick = function () {
-   color6.classList.toggle("click_border6");
+ colorSix.onclick = function () {
+   colorSix.classList.toggle("click_border6");
  };
 
  let casual = document.querySelector(".casual");

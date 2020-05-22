@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="/product-card.css" />
     <link rel="stylesheet" href="/reset.css" />
     <title>Product card</title>
-    <script defer src="/slider.js"></script>
-    <script defer src="/characteristics_selection.js"></script>
   </head>
   <body>
     <header class="header">
@@ -38,8 +36,8 @@
     </header>
 
     <div class="box">
-      <div class="all-foto">
-        <div class="foto">
+      <div class="all-photo">
+        <div class="photo">
           <div class="arrows">
             <img
               src="/img/product_card/vector-left.png"
@@ -56,70 +54,70 @@
             <li class="slide active">
               <img
                 src="/img/product_card/main_slider-img.png"
-                alt="foto"
-                class="foto_big"
+                alt="photo"
+                class="photo_big"
               />
             </li>
             <li class="slide">
               <img
                 src="/img/product_card/1slider-img.png"
-                alt="foto"
-                class="foto_big"
+                alt="photo"
+                class="photo_big"
               />
             </li>
             <li class="slide">
               <img
                 src="/img/product_card//2slider-img.png"
-                alt="foto"
-                class="foto_big"
+                alt="photo"
+                class="photo_big"
               />
             </li>
             <li class="slide">
               <img
                 src="/img/product_card/3slider-img.png"
-                alt="foto"
-                class="foto_big"
+                alt="photo"
+                class="photo_big"
               />
             </li>
             <li class="slide">
               <img
                 src="/img/product_card/4slider-img.png"
-                alt="foto"
-                class="foto_big"
+                alt="photo"
+                class="photo_big"
               />
             </li>
           </ul>
 
-          <div class="foto__container_small">
+          <div class="photo__container_small">
             <div class="photo_dot" style="display: none;">
               <img src="#" />
             </div>
             <div class="photo_dot active">
               <img
                 src="/img/product_card/1slider-img.png"
-                alt="foto"
-                class="foto_small"
+                alt="photo"
+                class="photo_small"
               />
             </div>
             <div class="photo_dot">
               <img
                 src="/img/product_card/2slider-img.png"
-                alt="foto"
-                class="foto_small"
+                alt="photo"
+                class="photo_small"
               />
             </div>
             <div class="photo_dot">
               <img
                 src="/img/product_card/3slider-img.png"
-                alt="foto"
-                class="foto_small"
+                alt="photo"
+                class="photo_small"
               />
             </div>
             <div class="photo_dot">
               <img
                 src="/img/product_card/4slider-img.png"
-                alt="foto"
-                class="foto_small"
+                alt="photo"
+                class="photo_small"
               />
             </div>
           </div>
@@ -127,35 +125,37 @@
       </div>
 
       <div class="product__discribe">
-        <p class="product__overalls">Overalls</p>
-        <p class="product__text">
-          Overalls in washed organic cotton denim. Collar, button fly, and
-          adjustable belt at waist. Chest pockets with flap. Long, gently flared
-          sleeves and straight legs with front pockets and back pockets.
-        </p>
-        <p class="product__color">Color</p>
-
-        <div class="product__color-all">
-          <div class="border-color border1">
-            <div class="product__color-different color1"></div>
+        <div class="product__container">
+          <p class="product__overalls">Overalls</p>
+          <p class="product__text">
+            Overalls in washed organic cotton denim. Collar, button fly, and
+            adjustable belt at waist. Chest pockets with flap. Long, gently flared
+            sleeves and straight legs with front pockets and back pockets.
+          </p>
+          <p class="product__color">Color</p>
+  
+          <div class="product__color-all">
+            <div class="border-color border1">
+              <div class="product__color-different color1"></div>
+            </div>
+            <div class="border-color border2">
+              <div class="product__color-different color2"></div>
+            </div>
+            <div class="border-color border3">
+              <div class="product__color-different color3"></div>
+            </div>
           </div>
-          <div class="border-color border2">
-            <div class="product__color-different color2"></div>
+          <p class="size">Size</p>
+          <div class="container-size">
+            <p class="container-size_all size_xs">XS</p>
+            <p class="container-size_all size_s">S</p>
+            <p class="container-size_all size_m">M</p>
+            <p class="container-size_all size_l">L</p>
+            <p class="container-size_all size_xl">XL</p>
           </div>
-          <div class="border-color border3">
-            <div class="product__color-different color3"></div>
-          </div>
+          <p class="price">$ 160</p>
+          <button class="button">Add to cart</button>
         </div>
-        <p class="size">Size</p>
-        <div class="container-size">
-          <p class="container-size_all size_xs">XS</p>
-          <p class="container-size_all size_s">S</p>
-          <p class="container-size_all size_m">M</p>
-          <p class="container-size_all size_l">L</p>
-          <p class="container-size_all size_xl">XL</p>
-        </div>
-        <p class="price">$ 160</p>
-        <button class="button">Add to cart</button>
       </div>
     </div>
 
@@ -231,5 +231,7 @@
         </div>
       </div>
     </div>
+  <script src="/slider.js"></script>
+  <script src="/characteristics_selection.js"></script>
   </body>
 </html>
