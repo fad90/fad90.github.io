@@ -292,10 +292,12 @@ h1 {
   width: 200px;
   height: 64px;
 }
+.container-category {
+  margin-top: 130px;
+}
 .category {
   display: flex;
   justify-content: space-between;
-  margin-top: 130px;
 }
 .by_category {
   width: 274px;
@@ -355,7 +357,6 @@ a {
 }
 
 /* footer */
-
 .footer {
   background: #151c22;
   height: 222px;
