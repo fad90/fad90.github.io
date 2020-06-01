@@ -16,8 +16,6 @@ body {
 h1 {
   margin: 0;
 }
-
-/* header */
 .header_logo {
   height: 17px;
   display: flex;
@@ -69,13 +67,15 @@ h1 {
 .text_and_button {
   padding-top: 192px;
   padding-left: 111px;
+  display: flex;
+  flex-direction: column;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
 }
 .quality {
   width: 211px;
   height: 13px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   color: #727a82;
   padding-bottom: 50px;
@@ -83,8 +83,6 @@ h1 {
 }
 .denim {
   font-family: Anton;
-  font-style: normal;
-  font-weight: normal;
   font-size: 128px;
   color: #151c22;
   width: 305px;
@@ -92,8 +90,6 @@ h1 {
 }
 .button_check {
   padding: 27px 24px;
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   color: #ffffff;
@@ -176,8 +172,6 @@ h1 {
   padding-top: 35px;
 }
 
-/* work area */
-
 .work_area {
   width: 100%;
   max-width: 1170px;
@@ -187,12 +181,13 @@ h1 {
 .clothes {
   display: flex;
   justify-content: space-between;
+  margin-top: 130px;
+  font-family: Work Sans;
+  font-style: normal;
 }
 .bestsellers {
   width: 178px;
   height: 21px;
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
@@ -200,25 +195,26 @@ h1 {
   margin: 0;
 }
 .view_all {
-  font-family: Work Sans;
-  font-style: normal;
+  width: 70px;
+  height: 13px;
   font-weight: 500;
   font-size: 18px;
   color: #151c22;
   margin: 0;
-  width: 70px;
-  height: 13px;
-  padding: 0px 5px 8px 5px;
-  border-bottom: 2px solid #151c22;
+  padding-right: 5px;
+}
+.line_view {
+  display: flex;
+  justify-content: flex-end;
 }
 .bestsellers_clothes {
   display: flex;
   justify-content: space-between;
   margin-top: 78px;
-}
-.clothes_name {
   font-family: Work Sans;
   font-style: normal;
+}
+.clothes_name {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -227,8 +223,6 @@ h1 {
   margin-top: 25px;
 }
 .clothes_price {
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -243,6 +237,8 @@ h1 {
 .pic_right {
   position: relative;
   margin: 0;
+  font-family: Work Sans;
+  font-style: normal;
 }
 .gray_fall {
   position: absolute;
@@ -270,8 +266,6 @@ h1 {
 }
 .text_fall_2019 {
   margin: 0;
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
@@ -282,8 +276,6 @@ h1 {
   margin: 0;
 }
 .shop_now {
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   background: #151c22;
@@ -302,8 +294,6 @@ h1 {
 .by_category {
   width: 274px;
   height: 21px;
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
@@ -313,8 +303,6 @@ h1 {
 .all_category {
   width: 70px;
   height: 13px;
-  font-family: Work Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -336,27 +324,21 @@ h1 {
   line-height: 21px;
   color: #151c22;
   margin: 0;
+  padding-top: 25px;
 }
 .cat_jeans {
   padding-right: 248px;
-  padding-top: 25px;
 }
 .cat_shirts {
   padding-right: 249px;
-  padding-top: 25px;
 }
 .cat_jackets {
-  padding-top: 25px;
   padding-right: 232px;
-}
-.cat_overalls {
-  padding-top: 25px;
 }
 a {
   text-decoration: none;
 }
 
-/* footer */
 .footer {
   background: #151c22;
   height: 222px;
