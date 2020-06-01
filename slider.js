@@ -1,9 +1,8 @@
-let next = document.querySelector(".next");
-let prev = document.querySelector(".prev");
-
-let slides = document.querySelectorAll(".slider li");
-let dots = document.querySelectorAll(".photo_dot");
-
+let next = document.querySelector(".next"),
+    prev = document.querySelector(".prev"),
+    slides = document.querySelectorAll(".slider li"),
+    dots = document.querySelectorAll(".photo_dot");
+    
 let index = 0;
 
 let activeSlide = function (n) {

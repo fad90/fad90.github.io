@@ -1,39 +1,39 @@
-let silver_border_color = document.querySelector(".border1");
-let blue_border_color = document.querySelector(".border2");
-let grey_border_color = document.querySelector(".border3");
+let colorTowerGray = document.querySelector(".border1"),
+    colorChambray = document.querySelector(".border2"),
+    colorSilverSand = document.querySelector(".border3");
 
-silver_border_color.onclick = function () {
-    silver_border_color.classList.toggle("silver");
+colorTowerGray.onclick = function () {
+    colorTowerGray.classList.toggle("silver");
 };
-blue_border_color.onclick = function () {
-    blue_border_color.classList.toggle("blue");
+colorChambray.onclick = function () {
+    colorChambray.classList.toggle("blue");
 };
-grey_border_color.onclick = function () {
-    grey_border_color.classList.toggle("grey");
-};
-
-let size_xs_click = document.querySelector(".size_xs");
-let size_s_click = document.querySelector(".size_s");
-let size_m_click = document.querySelector(".size_m");
-let size_l_click = document.querySelector(".size_l");
-let size_xl_click = document.querySelector(".size_xl");
-
-size_xs_click.onclick = function () {
-size_xs_click.classList.toggle("size_colour");
+colorSilverSand.onclick = function () {
+    colorSilverSand.classList.toggle("grey");
 };
 
-size_s_click.onclick = function () {
-size_s_click.classList.toggle("size_colour");
+let sizeXsClick = document.querySelector(".size_xs"),
+    sizeSClick = document.querySelector(".size_s"),
+    sizeMClick = document.querySelector(".size_m"),
+    sizeLClick = document.querySelector(".size_l"),
+    sizeXlClick = document.querySelector(".size_xl");
+
+sizeXsClick.onclick = function () {
+sizeXsClick.classList.toggle("size_colour");
 };
 
-size_m_click.onclick = function () {
-size_m_click.classList.toggle("size_colour");
+sizeSClick.onclick = function () {
+sizeSClick.classList.toggle("size_colour");
 };
 
-size_l_click.onclick = function () {
-size_l_click.classList.toggle("size_colour");
+sizeMClick.onclick = function () {
+sizeMClick.classList.toggle("size_colour");
 };
 
-size_xl_click.onclick = function () {
-size_xl_click.classList.toggle("size_colour");
+sizeLClick.onclick = function () {
+sizeLClick.classList.toggle("size_colour");
+};
+
+sizeXlClick.onclick = function () {
+sizeXlClick.classList.toggle("size_colour");
 };
