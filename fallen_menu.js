@@ -1,34 +1,31 @@
- let sliderOne = document.querySelector(".input-left");
- let valueOne = document.querySelector("p.price1");
- let sliderTwo = document.querySelector(".input-right");
- let valueTwo = document.querySelector("p.price2");
- valueOne.innerHTML = sliderOne.value;
- sliderOne.oninput = function () {
-   valueOne.innerHTML = this.value;
- };
- valueTwo.innerHTML = sliderTwo.value;
- sliderTwo.oninput = function () {
-   valueTwo.innerHTML = this.value;
- };
-
  let inputLeft = document.querySelector(".input-left");
+ let valueLeft = document.querySelector("p.price1");
  let inputRight = document.querySelector(".input-right");
+ let valueRight = document.querySelector("p.price2");
+ valueLeft.innerHTML = inputLeft.value;
+ inputLeft.oninput = function () {
+   valueLeft.innerHTML = this.value;
+ };
+ valueRight.innerHTML = inputRight.value;
+ inputRight.oninput = function () {
+   valueRight.innerHTML = this.value;
+ };
 
  let thumbLeft = document.querySelector(".slider > .thumb.left");
  let thumbRight = document.querySelector(".slider > .thumb.right");
  let range = document.querySelector(".slider > .range");
 
  function setLeftValue() {
-   let _this = inputLeft,
-     min = parseInt(_this.min),
-     max = parseInt(_this.max);
+   let thisValue = inputLeft,
+     min = parseInt(thisValue.min),
+     max = parseInt(thisValue.max);
 
-   _this.value = Math.min(
-     parseInt(_this.value),
+   thisValue.value = Math.min(
+     parseInt(thisValue.value),
      parseInt(inputRight.value) - 1
    );
 
-   let percent = ((_this.value - min) / (max - min)) * 100;
+   let percent = ((thisValue.value - min) / (max - min)) * 100;
 
    thumbLeft.style.left = percent + "%";
    range.style.left = percent + "%";
@@ -36,16 +33,16 @@
  setLeftValue();
 
  function setRightValue() {
-   let _this = inputRight,
-     min = parseInt(_this.min),
-     max = parseInt(_this.max);
+   let thisValue = inputRight,
+     min = parseInt(thisValue.min),
+     max = parseInt(thisValue.max);
 
-   _this.value = Math.max(
-     parseInt(_this.value),
+   thisValue.value = Math.max(
+     parseInt(thisValue.value),
      parseInt(inputLeft.value) + 1
    );
 
-   let percent = ((_this.value - min) / (max - min)) * 100;
+   let percent = ((thisValue.value - min) / (max - min)) * 100;
 
    thumbRight.style.right = 100 - percent + "%";
    range.style.right = 100 - percent + "%";
@@ -89,30 +86,30 @@ filterVector.onclick = function() {
  }
 
  
- let colorOne = document.querySelector(".border1");
- let colorTwo = document.querySelector(".border2");
- let colorThree = document.querySelector(".border3");
- let colorFour = document.querySelector(".border4");
- let colorFive = document.querySelector(".border5");
- let colorSix = document.querySelector(".border6");
+ let colorTowerGray = document.querySelector(".border1");
+ let colorChambray = document.querySelector(".border2");
+ let colorSilverSand = document.querySelector(".border3");
+ let colorOuterSpace = document.querySelector(".border4");
+ let colorGallery = document.querySelector(".border5");
+ let colorHavelockBlue = document.querySelector(".border6");
 
- colorOne.onclick = function () {
-   colorOne.classList.toggle("click_border1");
+ colorTowerGray.onclick = function () {
+  colorTowerGray.classList.toggle("click_border1");
  };
- colorTwo.onclick = function () {
-   colorTwo.classList.toggle("click_border2");
+ colorChambray.onclick = function () {
+   colorChambray.classList.toggle("click_border2");
  };
- colorThree.onclick = function () {
-   colorThree.classList.toggle("click_border3");
+ colorSilverSand.onclick = function () {
+   colorSilverSand.classList.toggle("click_border3");
  };
- colorFour.onclick = function () {
-   colorFour.classList.toggle("click_border4");
+ colorOuterSpace.onclick = function () {
+   colorOuterSpace.classList.toggle("click_border4");
  };
- colorFive.onclick = function () {
-   colorFive.classList.toggle("click_border5");
+ colorGallery.onclick = function () {
+   colorGallery.classList.toggle("click_border5");
  };
- colorSix.onclick = function () {
-   colorSix.classList.toggle("click_border6");
+ colorHavelockBlue.onclick = function () {
+   colorHavelockBlue.classList.toggle("click_border6");
  };
 
  let casual = document.querySelector(".casual");
