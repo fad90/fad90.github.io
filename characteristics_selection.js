@@ -1,6 +1,6 @@
-let colorTowerGray = document.querySelector(".border1");
-let colorChambray = document.querySelector(".border2");
-let colorSilverSand = document.querySelector(".border3");
+let colorTowerGray = document.querySelector(".border1"),
+    colorChambray = document.querySelector(".border2"),
+    colorSilverSand = document.querySelector(".border3");
 
 colorTowerGray.onclick = function () {
     colorTowerGray.classList.toggle("silver");
@@ -12,11 +12,11 @@ colorSilverSand.onclick = function () {
     colorSilverSand.classList.toggle("grey");
 };
 
-let sizeXsClick = document.querySelector(".size_xs");
-let sizeSClick = document.querySelector(".size_s");
-let sizeMClick = document.querySelector(".size_m");
-let sizeLClick = document.querySelector(".size_l");
-let sizeXlClick = document.querySelector(".size_xl");
+let sizeXsClick = document.querySelector(".size_xs"),
+    sizeSClick = document.querySelector(".size_s"),
+    sizeMClick = document.querySelector(".size_m"),
+    sizeLClick = document.querySelector(".size_l"),
+    sizeXlClick = document.querySelector(".size_xl");
 
 sizeXsClick.onclick = function () {
 sizeXsClick.classList.toggle("size_colour");

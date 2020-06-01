@@ -1,7 +1,8 @@
- let inputLeft = document.querySelector(".input-left");
- let valueLeft = document.querySelector("p.price1");
- let inputRight = document.querySelector(".input-right");
- let valueRight = document.querySelector("p.price2");
+ let inputLeft = document.querySelector(".input-left"),
+     valueLeft = document.querySelector("p.price1"),
+     inputRight = document.querySelector(".input-right"),
+     valueRight = document.querySelector("p.price2");
+
  valueLeft.innerHTML = inputLeft.value;
  inputLeft.oninput = function () {
    valueLeft.innerHTML = this.value;
@@ -11,9 +12,9 @@
    valueRight.innerHTML = this.value;
  };
 
- let thumbLeft = document.querySelector(".slider > .thumb.left");
- let thumbRight = document.querySelector(".slider > .thumb.right");
- let range = document.querySelector(".slider > .range");
+ let thumbLeft = document.querySelector(".slider > .thumb.left"),
+     thumbRight = document.querySelector(".slider > .thumb.right"),
+     range = document.querySelector(".slider > .range");
 
  function setLeftValue() {
    let thisValue = inputLeft,
@@ -53,32 +54,32 @@
  inputRight.addEventListener("input", setRightValue);
 
 
- let filterElem = document.querySelector(".menu__filter-block");
- let filterVector = document.querySelector(".menu__filter");
+ let filterElem = document.querySelector(".menu__filter-block"),
+     filterVector = document.querySelector(".menu__filter");
 
 filterVector.onclick = function() {
    filterElem.classList.toggle("menu__filter-fall");
    filterVector.classList.toggle("menu__filter-vector");
  }
  
- let priceElem = document.querySelector(".price__box");
- let priceVector = document.querySelector(".menu__price");
+ let priceElem = document.querySelector(".price__box"),
+     priceVector = document.querySelector(".menu__price");
 
  priceVector.onclick = function() {
    priceElem.classList.toggle("price__filter-fall");
    priceVector.classList.toggle("menu__price-vector");
  }
  
- let colorElem = document.querySelector(".menu__color-all");
- let colorVector = document.querySelector(".menu__color");
+ let colorElem = document.querySelector(".menu__color-all"),
+     colorVector = document.querySelector(".menu__color");
 
  colorVector.onclick = function() {
    colorElem.classList.toggle("menu__color-fall");
    colorVector.classList.toggle("menu__color-vector");
  }
  
- let collectionElem = document.querySelector(".collection__box");
- let collectionVector = document.querySelector(".menu__collection");
+ let collectionElem = document.querySelector(".collection__box"),
+     collectionVector = document.querySelector(".menu__collection");
 
  collectionVector.onclick = function() {
    collectionElem.classList.toggle("menu__collection-fall");
@@ -86,12 +87,12 @@ filterVector.onclick = function() {
  }
 
  
- let colorTowerGray = document.querySelector(".border1");
- let colorChambray = document.querySelector(".border2");
- let colorSilverSand = document.querySelector(".border3");
- let colorOuterSpace = document.querySelector(".border4");
- let colorGallery = document.querySelector(".border5");
- let colorHavelockBlue = document.querySelector(".border6");
+ let colorTowerGray = document.querySelector(".border1"),
+     colorChambray = document.querySelector(".border2"),
+     colorSilverSand = document.querySelector(".border3"),
+     colorOuterSpace = document.querySelector(".border4"),
+     colorGallery = document.querySelector(".border5"),
+     colorHavelockBlue = document.querySelector(".border6");
 
  colorTowerGray.onclick = function () {
   colorTowerGray.classList.toggle("click_border1");
@@ -112,10 +113,10 @@ filterVector.onclick = function() {
    colorHavelockBlue.classList.toggle("click_border6");
  };
 
- let casual = document.querySelector(".casual");
- let petite = document.querySelector(".petite");
- let classic = document.querySelector(".classic");
- let soulluxe = document.querySelector(".soulluxe");
+ let casual = document.querySelector(".casual"),
+     petite = document.querySelector(".petite"),
+     classic = document.querySelector(".classic"),
+     soulluxe = document.querySelector(".soulluxe");
 
  casual.onclick = function () {
    casual.classList.toggle("collection_click");
