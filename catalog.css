@@ -133,8 +133,6 @@ a {
   padding-bottom: 40px;
 }
 .menu {
-  top: 40px;
-  right: 0;
   z-index: 10;
 }
 .menu__filter-block {
