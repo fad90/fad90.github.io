@@ -8,12 +8,16 @@
       href="https://fonts.googleapis.com/css?family=Anton|Work+Sans:400,500,700,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/same_styles.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Nimes</title>
   </head>
   <body>
-    <header class="header_logo">
-      <img src="/img/main_page/logo.svg" alt="logo" class="logo" />
+    <header class="header">
+      <div class="header_container">
+        <img src="/img/main_page/logo.svg" alt="logo" class="logo" />
+      </div>
     </header>
     <div class="wrapper">
       <div class="container_main">
@@ -69,33 +73,33 @@
     </div>
 
     <div class="work_area">
-      <div class="clothes">
-        <a href="/catalog.html"
-          ><p class="bestsellers">Bestsellers</p></a
-        >
-        <a href="/catalog.html"><p class="view_all">View all</p></a>
+      <div class="caption">
+        <div class="caption__box">
+          <a href="/catalog.html"><p class="caption__text-left">Bestsellers</p></a>
+          <a href="/catalog.html"><p class="caption__text-right">View all</p></a>
+        </div>
       </div>
 
-      <div class="bestsellers_clothes">
-        <a class="bestsellers_pic" href="/product-card.html">
+      <div class="products__container">
+        <a class="product" href="/product-card.html">
           <img src="/img/main_page/bestseller_pic1.png" alt="Jacket" />
-          <p class="clothes_name jacket1">Jacket</p>
-          <p class="clothes_price jacket120">$ 120</p>
+          <p class="product__text">Jacket</p>
+          <p class="product__price">$ 120</p>
         </a>
-        <a class="bestsellers_pic" href="/product-card.html">
+        <a class="product" href="/product-card.html">
           <img src="/img/main_page/bestseller_pic2.png" alt="Overalls" />
-          <p class="clothes_name overalls1">Overalls</p>
-          <p class="clothes_price overalls140">$ 140</p>
+          <p class="product__text">Overalls</p>
+          <p class="product__price">$ 140</p>
         </a>
-        <a class="bestsellers_pic" href="/product-card.html">
+        <a class="product" href="/product-card.html">
           <img src="/img/main_page/bestseller_pic3.png" alt="Jacket" />
-          <p class="clothes_name jacket2">Jacket</p>
-          <p class="clothes_price jacket90">$ 90</p>
+          <p class="product__text">Jacket</p>
+          <p class="product__price">$ 90</p>
         </a>
-        <a class="bestsellers_pic" href="/product-card.html">
+        <a class="product" href="/product-card.html">
           <img src="/img/main_page/bestseller_pic4.png" alt="Overalls" />
-          <p class="clothes_name overalls2">Overalls</p>
-          <p class="clothes_price overalls160">$ 160</p>
+          <p class="product__text">Overalls</p>
+          <p class="product__price">$ 160</p>
         </a>
       </div>
 
@@ -129,64 +133,62 @@
       </div>
 
         <div class="container-category">
-          <div class="category">
-            <a href="/catalog.html"><p class="by_category">Shop by category</p></a>
-            <a href="/catalog.html"><p class="all_category">View all</p></a>
+          <div class="caption">
+            <div class="caption__box">
+              <a href="/catalog.html"><p class="caption__text-left">You may also like</p></a h>
+              <a href="/catalog.html"><p class="caption__text-right">View all</p></a>
+            </div>
           </div>
     
-          <div class="shop_by_category">
-            <a class="jeans_down" href="/catalog.html">
+          <div class="products__container">
+            <a class="product" href="/catalog.html">
               <img src="/img/main_page/Jeans_down.png" alt="Jeans" />
-              <p class="category_clothes cat_jeans">Jeans</p>
+              <p class="product__text">Jeans</p>
             </a>
-            <a class="shirts_down" href="/catalog.html">
+            <a class="product" href="/catalog.html">
               <img src="/img/main_page/shirts_down.png" alt="Shirts" />
-              <p class="category_clothes cat_shirts">Shirts</p>
+              <p class="product__text">Shirts</p>
             </a>
-            <a class="jackets_down" href="/catalog.html">
+            <a class="product" href="/catalog.html">
               <img src="/img/main_page/Jackets_down.png" alt="Jackets" />
-              <p class="category_clothes cat_jackets">Jackets</p>
+              <p class="product__text">Jackets</p>
             </a>
-            <a class="overalls_down" href="/catalog.html">
+            <a class="product" href="/catalog.html">
               <img src="/img/main_page/Overalls_down.png" alt="Overalls" />
-              <p class="category_clothes cat_overalls">Overalls</p>
+              <p class="product__text">Overalls</p>
             </a>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div class="field">
-        <div class="field_logo">
-          <img
-            src="/img/main_page/logo_footer.svg"
-            alt="logo-footer"
-            class="logo_footer"
-          />
+      <div class="footer__section__logo">
+        <div class="footer__logo">
+          <img src="/img/catalog/logo_footer.svg" alt="logo-footer" />
         </div>
 
-        <div class="contain_footer">
-          <nav class="nav_footer">
-            <a class="footer_link shop" href="#">Shop</a>
-            <a class="footer_link delivery" href="#">Delivery</a>
-            <a class="footer_link service" href="#">Service</a>
-            <a class="footer_link sitemap" href="#">Sitemap</a>
-            <a class="footer_link contacts" href="#">Contacts</a>
+        <div class="footer__section__link">
+          <nav class="footer__nav">
+            <a class="footer__link footer__link_shop" href="#">Shop</a>
+            <a class="footer__link footer___link_delivery" href="#">Delivery</a>
+            <a class="footer__link footer__link_service" href="#">Service</a>
+            <a class="footer__link footer__link_sitemap" href="#">Sitemap</a>
+            <a class="footer__link footer__link_contacts" href="#">Contacts</a>
           </nav>
         </div>
 
-        <div class="social_media">
-          <a class="media" href="#">
-            <img src="/img/main_page/facebook_footer.svg" alt="facebook" />
+        <div class="footer__media">
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/facebook_footer.svg" alt="facebook" />
           </a>
-          <a class="media" href="#">
-            <img src="/img/main_page/instagram_footer.svg" alt="instagram" />
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/instagram_footer.svg" alt="instagram" />
           </a>
-          <a class="media" href="#">
-            <img src="/img/main_page/pinterest_footer.svg" alt="pinterest" />
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/pinterest_footer.svg" alt="pinterest" />
           </a>
-          <a class="media" href="#">
-            <img src="/img/main_page/twitter_footer.svg" alt="twitter" />
+          <a class="footer__media__logo" href="#">
+            <img src="/img/catalog/twitter_footer.svg" alt="twitter" />
           </a>
         </div>
       </div>
