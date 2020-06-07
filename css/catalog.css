@@ -1,6 +1,3 @@
-a {
-  text-decoration: none;
-}
 .header__container {
   width: 100%;
   max-width: 1170px;
@@ -426,10 +423,10 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   margin-top: 66px;
 }
-.product__top-indent {
+.products__container-indent {
   margin-top: 0px;
 }
-.product {
+.product-item {
   padding-right: 66px;
 }
 .products__container-down {
@@ -437,7 +434,7 @@ input[type="range"]::-webkit-slider-thumb {
   position: absolute;
   bottom: 0;
 }
-.product-down {
+.product-item-down {
   padding-right: 66px;
 }
 .main a img:hover {
