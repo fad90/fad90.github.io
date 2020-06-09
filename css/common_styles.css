@@ -1,9 +1,9 @@
 body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
-  line-height: 19px;
-  color: #151c22;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22;
 }
 .html {
   box-sizing: border-box;
@@ -13,15 +13,139 @@ body {
 *::after {
   box-sizing: inherit;
 }
+a {
+  text-decoration: none;
+}
 h1 {
   margin: 0;
 }
-.header_logo {
-  height: 17px;
+.header {
+  width: 100%;
+  height: 68px;
+  background-color: white;
+}
+.header__container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  padding-right: 35px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #151c22;
+  font-family: Work Sans;
+}
+.products {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.products__block {
+  display: flex;
+}
+.product-item {
+  padding-right: 30px;
+}
+.product-item__text {
+  padding-top: 25px;
+  font-family: Work Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #151c22;
+}
+.product-item__price {
+  padding-top: 15px;
+  font-family: Work Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #151c22;
+}
+
+.caption {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.caption__box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  font-family: Work Sans;
+  font-style: normal;
+  padding-bottom: 70px;
+}
+.caption__text-left {
+  width: 273px;
+  height: 21px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #151c22;
+}
+.caption__text-right {
+  width: 70px;
+  height: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #151c22;
+  margin: 0;
+  padding: 0px 5px 8px 5px;
+  border-bottom: 2px solid #151c22;
+}
+
+.footer {
+  background: #151c22;
+  height: 222px;
+  margin-top: 130px;
+}
+.footer__section__logo {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.footer__logo {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+}
+.footer__section__link {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+.footer__link {
+  text-decoration: none;
+  margin-right: 35px;
+  color: #ffffff;
+  height: 13px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.footer__media {
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+}
+.footer__media__logo {
+  margin-right: 30px;
+}
+
+
+.header__container_main-page {
+  display: flex;
+  justify-content: center;
 }
 .wrapper {
   width: 100%;
@@ -172,63 +296,11 @@ h1 {
   padding-top: 35px;
 }
 
-.work_area {
+.products__container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   margin-top: 130px;
-}
-.clothes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 130px;
-  font-family: Work Sans;
-  font-style: normal;
-}
-.bestsellers {
-  width: 178px;
-  height: 21px;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  color: #151c22;
-  margin: 0;
-}
-.view_all {
-  width: 70px;
-  height: 13px;
-  font-weight: 500;
-  font-size: 18px;
-  color: #151c22;
-  margin: 0;
-  padding-right: 5px;
-}
-.line_view {
-  display: flex;
-  justify-content: flex-end;
-}
-.bestsellers_clothes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 78px;
-  font-family: Work Sans;
-  font-style: normal;
-}
-.clothes_name {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #151c22;
-  margin: 0;
-  margin-top: 25px;
-}
-.clothes_price {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #151c22;
-  margin: 0;
-  margin-top: 15px;
 }
 .fall_2019 {
   display: flex;
@@ -287,98 +359,3 @@ h1 {
 .container-category {
   margin-top: 130px;
 }
-.category {
-  display: flex;
-  justify-content: space-between;
-}
-.by_category {
-  width: 274px;
-  height: 21px;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  color: #151c22;
-  margin: 0;
-}
-.all_category {
-  width: 70px;
-  height: 13px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #151c22;
-  margin: 0;
-  padding: 0px 5px 8px 5px;
-  border-bottom: 2px solid #151c22;
-}
-.shop_by_category {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px;
-}
-.category_clothes {
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #151c22;
-  margin: 0;
-  padding-top: 25px;
-}
-.cat_jeans {
-  padding-right: 248px;
-}
-.cat_shirts {
-  padding-right: 249px;
-}
-.cat_jackets {
-  padding-right: 232px;
-}
-a {
-  text-decoration: none;
-}
-
-.footer {
-  background: #151c22;
-  height: 222px;
-  margin-top: 130px;
-}
-.field {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.field_logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-.contain_footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 35px;
-}
-.footer_link {
-  text-decoration: none;
-  margin-right: 35px;
-  color: #ffffff;
-  height: 13px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-}
-.social_media {
-  display: flex;
-  justify-content: center;
-  margin-top: 37px;
-}
-.media {
-  padding-right: 30px;
-}
-.media:last-child {
-  padding-right: 0px;
-}
-
