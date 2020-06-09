@@ -16,18 +16,37 @@ body {
 a {
   text-decoration: none;
 }
+h1 {
+  margin: 0;
+}
 .header {
   width: 100%;
   height: 68px;
   background-color: white;
 }
-
+.header__container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  padding-right: 35px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #151c22;
+  font-family: Work Sans;
+}
 .products {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-.products__container {
+.products__block {
   display: flex;
 }
 .product-item {
@@ -121,4 +140,222 @@ a {
 }
 .footer__media__logo {
   margin-right: 30px;
+}
+
+
+.header__container_main-page {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  height: 617px;
+  background: #f1f2f4;
+}
+.container_main {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.container_nav-vector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.nav_link {
+  padding-bottom: 35px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #151c22;
+}
+.nav_link:last-child {
+  padding-bottom: 0;
+}
+.nav_link:hover {
+  color: grey;
+}
+.vector_box {
+  padding-bottom: 50px;
+}
+.text_and_button {
+  padding-top: 192px;
+  padding-left: 111px;
+  display: flex;
+  flex-direction: column;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+}
+.quality {
+  width: 211px;
+  height: 13px;
+  font-size: 18px;
+  color: #727a82;
+  padding-bottom: 50px;
+  padding-left: 5px;
+}
+.denim {
+  font-family: Anton;
+  font-size: 128px;
+  color: #151c22;
+  width: 305px;
+  height: 104px;
+}
+.button_check {
+  padding: 27px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  background: #151c22;
+  border: 0;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.button_check:hover {
+  background: grey;
+}
+.three_image {
+  height: 100%;
+  padding-left: 50px;
+}
+.logo_face {
+  width: 430px;
+  height: 517px;
+}
+.main_img-center {
+  padding: 49px 50px 48px 50px;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+}
+
+.main_img-center:before {
+  content: " ";
+  background-image: url(/img/main_page/picture_up.svg);
+  position: absolute;
+  width: 232px;
+  height: 176px;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+.main_img-center:after {
+  content: " ";
+  background-image: url(/img/main_page/picture_down.svg);
+  position: absolute;
+  width: 232px;
+  height: 176px;
+  z-index: -1;
+  bottom: 0px;
+  right: 0px;
+}
+.container_icon-network {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.basket_loupe {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.logo_basket {
+  padding-bottom: 35px;
+}
+.nav_network {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.network_header {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #151c22;
+}
+.network_header:hover {
+  color: grey;
+}
+.instagram_header {
+  padding-top: 35px;
+}
+
+.products__container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+.fall_2019 {
+  display: flex;
+  margin-top: 130px;
+}
+.pic_right {
+  position: relative;
+  margin: 0;
+  font-family: Work Sans;
+  font-style: normal;
+}
+.gray_fall {
+  position: absolute;
+  width: 400px;
+  height: 308px;
+  top: 31px;
+  right: 71px;
+  background-color: #F1F2F4;
+}
+.container_fall2019 {
+   padding-top: 70px;
+   padding-left: 70px;
+}
+.street_fashion {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #727a82;
+  width: 218px;
+  height: 13px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.text_fall_2019 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #151c22;
+  padding-bottom: 50px;
+}
+.form_button {
+  margin: 0;
+}
+.shop_now {
+  font-weight: bold;
+  font-size: 16px;
+  background: #151c22;
+  color: white;
+  border: 0;
+  width: 200px;
+  height: 64px;
+}
+.container-category {
+  margin-top: 130px;
 }
