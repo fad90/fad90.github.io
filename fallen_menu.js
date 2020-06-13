@@ -1,7 +1,7 @@
  let inputLeft = document.querySelector(".input-left"),
-     valueLeft = document.querySelector("p.price1"),
+     valueLeft = document.querySelector("p.price__input-left"),
      inputRight = document.querySelector(".input-right"),
-     valueRight = document.querySelector("p.price2");
+     valueRight = document.querySelector("p.price__input-right");
 
  valueLeft.innerHTML = inputLeft.value;
  inputLeft.oninput = function () {
@@ -78,7 +78,7 @@ filterVector.onclick = function() {
    colorVector.classList.toggle("menu__color-vector");
  }
  
- let collectionElem = document.querySelector(".collection__box"),
+ let collectionElem = document.querySelector(".collection__wrap"),
      collectionVector = document.querySelector(".menu__collection");
 
  collectionVector.onclick = function() {
