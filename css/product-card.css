@@ -1,20 +1,20 @@
 .header__new {
   padding-right: 0;
 }
-.header__basket-loupe {
+.header__cart-loupe {
   display: flex;
 }
 .header__loupe {
   padding-left: 35px;
 }
 
-.box {
+.product {
   width: 100%;
   height: 656px;
   display: flex;
   margin-top: 50px;
 }
-.all-photo {
+.product__photos {
   margin-right: 60px;
 }
 .photo {
@@ -51,10 +51,10 @@
 .slide.active {
   display: block;
 }
-.arrow.next {
+.arrow.arrow__next {
   right: 0;
 }
-.photo_big {
+.slide__photo_big {
   width: 400px;
   height: 523px;
 }
@@ -65,10 +65,10 @@
   margin: 0 auto;
   margin-top: 20px;
 }
-.photo_dot {
+.photo__dot {
   cursor: pointer;
 }
-.photo_dot.active {
+.photo__dot.active {
   box-shadow: 0 0 4px 3px rgb(18, 128, 136);
 }
 .product__discribe {
@@ -123,30 +123,30 @@
   margin: 2px;
   background-color: #b0c3c7;
 }
-.border1:hover {
+.border-color_TowerGray:hover {
   border: 1px solid #b0c3c7;
 }
-.silver {
+.TowerGray {
   border: 1px solid #b0c3c7;
 }
 .product__color-different.color2 {
   margin: 2px;
   background-color: #3b6392;
 }
-.border2:hover {
+.border-color_Chambray:hover {
   border: 1px solid #3b6392;
 }
-.blue {
+.Chambray {
   border: 1px solid #3b6392;
 }
 .product__color-different.color3 {
   margin: 2px;
   background-color: #bfc3c8;
 }
-.border3:hover {
+.border-color_SilverSand:hover {
   border: 1px solid #bfc3c8;
 }
-.grey {
+.SilverSand {
   border: 1px solid #bfc3c8;
 }
 .size {

@@ -1,7 +1,7 @@
-let next = document.querySelector(".next"),
-    prev = document.querySelector(".prev"),
+let next = document.querySelector(".arrow__next"),
+    prev = document.querySelector(".arrow__prev"),
     slides = document.querySelectorAll(".slider li"),
-    dots = document.querySelectorAll(".photo_dot");
+    dots = document.querySelectorAll(".photo__dot");
     
 let index = 0;
 

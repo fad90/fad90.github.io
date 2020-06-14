@@ -1,15 +1,15 @@
-let colorTowerGray = document.querySelector(".border1"),
-    colorChambray = document.querySelector(".border2"),
-    colorSilverSand = document.querySelector(".border3");
+let colorTowerGray = document.querySelector(".border-color_TowerGray"),
+    colorChambray = document.querySelector(".border-color_Chambray"),
+    colorSilverSand = document.querySelector(".border-color_SilverSand");
 
 colorTowerGray.onclick = function () {
-    colorTowerGray.classList.toggle("silver");
+    colorTowerGray.classList.toggle("TowerGray");
 };
 colorChambray.onclick = function () {
-    colorChambray.classList.toggle("blue");
+    colorChambray.classList.toggle("Chambray");
 };
 colorSilverSand.onclick = function () {
-    colorSilverSand.classList.toggle("grey");
+    colorSilverSand.classList.toggle("SilverSand");
 };
 
 let sizeXsClick = document.querySelector(".size_xs"),
