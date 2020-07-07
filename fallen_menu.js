@@ -1,7 +1,7 @@
  let inputLeft = document.querySelector(".input-left"),
-     valueLeft = document.querySelector("p.price1"),
+     valueLeft = document.querySelector("p.price__input-left"),
      inputRight = document.querySelector(".input-right"),
-     valueRight = document.querySelector("p.price2");
+     valueRight = document.querySelector("p.price__input-right");
 
  valueLeft.innerHTML = inputLeft.value;
  inputLeft.oninput = function () {
@@ -78,7 +78,7 @@ filterVector.onclick = function() {
    colorVector.classList.toggle("menu__color-vector");
  }
  
- let collectionElem = document.querySelector(".collection__box"),
+ let collectionElem = document.querySelector(".collection__wrap"),
      collectionVector = document.querySelector(".menu__collection");
 
  collectionVector.onclick = function() {
@@ -87,30 +87,30 @@ filterVector.onclick = function() {
  }
 
  
- let colorTowerGray = document.querySelector(".border1"),
-     colorChambray = document.querySelector(".border2"),
-     colorSilverSand = document.querySelector(".border3"),
-     colorOuterSpace = document.querySelector(".border4"),
-     colorGallery = document.querySelector(".border5"),
-     colorHavelockBlue = document.querySelector(".border6");
+ let colorTowerGray = document.querySelector(".border_TowerGray"),
+     colorChambray = document.querySelector(".border_Chambray"),
+     colorSilverSand = document.querySelector(".border_SilverSand"),
+     colorOuterSpace = document.querySelector(".border_OuterSpace"),
+     colorGallery = document.querySelector(".border_Gallery"),
+     colorHavelockBlue = document.querySelector(".border_HavelockBlue");
 
  colorTowerGray.onclick = function () {
-  colorTowerGray.classList.toggle("click_border1");
+  colorTowerGray.classList.toggle("click__border_TowerGray");
  };
  colorChambray.onclick = function () {
-   colorChambray.classList.toggle("click_border2");
+   colorChambray.classList.toggle("click__border_Chambray");
  };
  colorSilverSand.onclick = function () {
-   colorSilverSand.classList.toggle("click_border3");
+   colorSilverSand.classList.toggle("click__border_SilverSand");
  };
  colorOuterSpace.onclick = function () {
-   colorOuterSpace.classList.toggle("click_border4");
+   colorOuterSpace.classList.toggle("click__border_OuterSpace");
  };
  colorGallery.onclick = function () {
-   colorGallery.classList.toggle("click_border5");
+   colorGallery.classList.toggle("click__border_Gallery");
  };
  colorHavelockBlue.onclick = function () {
-   colorHavelockBlue.classList.toggle("click_border6");
+   colorHavelockBlue.classList.toggle("click_border_HavelockBlue");
  };
 
  let casual = document.querySelector(".casual"),
