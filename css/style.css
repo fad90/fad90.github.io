@@ -1,0 +1,223 @@
+.header__container_main-page {
+    display: flex;
+    justify-content: center;
+  }
+  .intro {
+    min-width: 100%;
+    max-height: 617px;
+    background: #f1f2f4;
+  }
+  .intro__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .intro__nav-vector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .intro__nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .intro__item {
+    padding-bottom: 35px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #151c22;
+  }
+  .intro__item:last-child {
+    padding-bottom: 0;
+  }
+  .intro__item:hover {
+    color: grey;
+  }
+  .intro__vector_pic {
+    padding-bottom: 50px;
+  }
+  .intro__text-button {
+    margin-top: 192px;
+    margin-left: 111px;
+    display: flex;
+    flex-direction: column;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .intro__quality {
+    width: 211px;
+    height: 13px;
+    font-size: 18px;
+    color: #727a82;
+    padding-bottom: 50px;
+    padding-left: 5px;
+  }
+  .intro__denim {
+    font-family: Anton;
+    font-size: 128px;
+    color: #151c22;
+    width: 305px;
+    height: 104px;
+  }
+  .button {
+    padding: 27px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background: #151c22;
+    border: 0;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: grey;
+  }
+  .intro__images {
+    height: 100%;
+    margin-left: 50px;
+  }
+  .image-face {
+    width: 426px;
+  }
+  .intro__images_center {
+    padding: 50px 50px 50px 50px;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+  }
+  
+  .intro__images_center:before {
+    content: " ";
+    background-image: url(/img/main_page/picture_up.svg);
+    position: absolute;
+    width: 232px; 
+    height: 176px;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    
+  }
+  .intro__images_center:after {
+    content: " ";
+    background-image: url(/img/main_page/picture_down.svg);
+    position: absolute;
+    width: 232px;
+    height: 176px;
+    z-index: -1;
+    bottom: 0px;
+    right: 0px;
+  }
+  .intro__icons-network {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .intro__icons {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .intro__icons-pic {
+    padding-bottom: 35px;
+  }
+  .intro__nav-networks {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .intro__networks {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #151c22;
+  }
+  .intro__networks:hover {
+    color: grey;
+  }
+  .intro__networks-instagram {
+    padding-top: 35px;
+  }
+  
+  .products__container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+  .product-item img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .collection {
+    display: flex;
+    margin-top: 130px;
+  }
+  .collection img {
+      max-width: 100%;
+
+  }
+  .collection__container {
+    position: relative;
+    margin: 0;
+    font-family: Work Sans;
+    font-style: normal;
+  }
+  .collection__box {
+    position: absolute;
+    width: 100%;
+    height: 308px;
+    top: 31px;
+    background-color: #F1F2F4;
+  }
+  .collection__information {
+     margin-top: 70px;
+     margin-left: 70px;
+  }
+  .collection__information_title {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #727a82;
+    width: 218px;
+    height: 13px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  .collection__information_subtitle {
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #151c22;
+    padding-bottom: 50px;
+  }
+  .collection__information_form {
+    margin: 0;
+  }
+  .collection__information_button {
+    font-weight: bold;
+    font-size: 16px;
+    background: #151c22;
+    color: white;
+    border: 0;
+    width: 200px;
+    height: 64px;
+  }
+  .container-category {
+    margin-top: 130px;
+  }
+
