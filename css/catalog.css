@@ -16,12 +16,22 @@
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .container__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .text {
   font-family: Work Sans;
@@ -30,8 +40,13 @@
   padding-top: 73px;
 }
 .text__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .text__link {
   padding-right: 10px;
@@ -87,8 +102,12 @@
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -192,11 +211,15 @@
 }
 .slider > .thumb.left {
   left: 16%;
-  transform: translate(-15px, -7px);
+  -webkit-transform: translate(-15px, -7px);
+      -ms-transform: translate(-15px, -7px);
+          transform: translate(-15px, -7px);
 }
 .slider > .thumb.right {
   right: 16%;
-  transform: translate(15px, -7px);
+  -webkit-transform: translate(15px, -7px);
+      -ms-transform: translate(15px, -7px);
+          transform: translate(15px, -7px);
 }
 input[type="range"] {
   position: absolute;
@@ -220,8 +243,12 @@ input[type="range"]::-webkit-slider-thumb {
 .price__block {
   width: 90%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 18px;
   font-family: Work Sans;
   font-style: normal;
@@ -229,9 +256,13 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 14px;
 }
 .input__price-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .input__price-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .dollar {
@@ -248,8 +279,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .menu__color-all {
   padding-top: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 28px;
 }
 .menu__color-fall {
@@ -333,6 +367,8 @@ input[type="range"]::-webkit-slider-thumb {
   display: none;
 }
 .collection__view {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .collection__view_up {
@@ -382,9 +418,15 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 39px;
   width: 243px;
   height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .menu__clear {
   font-family: Work Sans;
@@ -403,6 +445,8 @@ input[type="range"]::-webkit-slider-thumb {
   position: relative;
 }
 .products__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 66px;
 }
@@ -413,6 +457,8 @@ input[type="range"]::-webkit-slider-thumb {
   padding-right: 66px;
 }
 .products__block-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -421,5 +467,6 @@ input[type="range"]::-webkit-slider-thumb {
   padding-right: 66px;
 }
 .main a img:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
